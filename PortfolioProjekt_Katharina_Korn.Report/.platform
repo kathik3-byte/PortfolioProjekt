@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "PortfolioProjekt_Katharina_Korn"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "01c56af5-352e-4bc8-ac1b-5e952754ec7a"
+  }
+}

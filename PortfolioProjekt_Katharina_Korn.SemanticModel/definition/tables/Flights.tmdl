@@ -1,0 +1,290 @@
+table Flights
+	lineageTag: 16750703-aa9c-4da1-a605-f209c5dca6ae
+
+	column fl_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 3bceccfa-123e-4f2b-a498-9eead2742d67
+		summarizeBy: none
+		sourceColumn: fl_date
+
+		variation Variation
+			isDefault
+			relationship: c0afd6bf-4afa-4a12-b976-7680cd953e27
+			defaultHierarchy: LocalDateTable_360f2c5f-2e85-4a4d-8c95-710f89c04204.Datumshierarchie
+
+		annotation SummarizationSetBy = Automatic
+
+	column op_carrier
+		dataType: string
+		lineageTag: 2d2afb3a-a904-4b45-91a1-2bed81ebec3e
+		summarizeBy: none
+		sourceColumn: op_carrier
+
+		annotation SummarizationSetBy = Automatic
+
+	column origin
+		dataType: string
+		lineageTag: 2be40d57-6b82-4609-ada5-2867112d952c
+		summarizeBy: none
+		sourceColumn: origin
+
+		annotation SummarizationSetBy = Automatic
+
+	column dest
+		dataType: string
+		lineageTag: c569b337-e427-4540-b402-1d191c01adda
+		summarizeBy: none
+		sourceColumn: dest
+
+		annotation SummarizationSetBy = Automatic
+
+	column dep_delay
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: bd99a1c1-ccae-4a1a-847b-4e4f53d17a9c
+		summarizeBy: sum
+		sourceColumn: dep_delay
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column arr_delay
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 0035469b-115d-4a81-a794-f17abcceb710
+		summarizeBy: sum
+		sourceColumn: arr_delay
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column crs_dep_time_neu
+		dataType: dateTime
+		formatString: Long Time
+		lineageTag: e2e2d482-6b0b-4ed6-8553-704a2c27c393
+		summarizeBy: none
+		sourceColumn: crs_dep_time_neu
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
+	column dep_time_neu
+		dataType: dateTime
+		formatString: Long Time
+		lineageTag: cddbc75a-9415-43f1-a120-f5e6e24c783b
+		summarizeBy: none
+		sourceColumn: dep_time_neu
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
+	column crs_arr_time_neu
+		dataType: dateTime
+		formatString: Long Time
+		lineageTag: cf1e67cb-abc5-43f3-9e92-8c4460428ef6
+		summarizeBy: none
+		sourceColumn: crs_arr_time_neu
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
+	column arr_time_neu
+		dataType: dateTime
+		formatString: Long Time
+		lineageTag: 349f602e-35d3-4e20-96f9-33a60d11b6b5
+		summarizeBy: none
+		sourceColumn: arr_time_neu
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
+	column Flugrichtung
+		dataType: string
+		lineageTag: ba149e79-4a42-4012-8c95-1888fcf7bf7d
+		summarizeBy: none
+		sourceColumn: Flugrichtung
+
+		annotation SummarizationSetBy = Automatic
+
+	column dep_delay_abs
+		dataType: int64
+		formatString: 0
+		lineageTag: 2d4818aa-236c-45c3-aa84-43bfea2961a1
+		summarizeBy: sum
+		sourceColumn: dep_delay_abs
+
+		annotation SummarizationSetBy = Automatic
+
+	column arr_delay_abs
+		dataType: int64
+		formatString: 0
+		lineageTag: 348016d2-c224-4ee2-bb18-7aeb76a13152
+		summarizeBy: sum
+		sourceColumn: arr_delay_abs
+
+		annotation SummarizationSetBy = Automatic
+
+	column Verspätung_abs
+		dataType: int64
+		formatString: 0
+		lineageTag: 2dd824b9-a289-47f9-ab5f-0acfcfe6287c
+		summarizeBy: sum
+		sourceColumn: Verspätung_abs
+
+		annotation SummarizationSetBy = Automatic
+
+	column Unpünktlich
+		dataType: string
+		isHidden
+		lineageTag: 739225b1-cef2-4413-bbc4-f6ec8ed7bf6a
+		summarizeBy: none
+		sourceColumn: Unpünktlich
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Kalenderwoche
+		dataType: int64
+		formatString: 0
+		lineageTag: d8e831a3-6ae4-4bab-9072-49327388dfb7
+		summarizeBy: sum
+		sourceColumn: Kalenderwoche
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Unpünktlich umgewandelt'
+		dataType: int64
+		formatString: 0
+		lineageTag: ebe78bae-0bc3-4b99-a0db-819cd4d7f6a4
+		summarizeBy: sum
+		sourceColumn: Unpünktlich umgewandelt
+
+		annotation SummarizationSetBy = Automatic
+
+	column Wochentag_Name =
+			
+			FORMAT(Flights[fl_date], "dddd", "de-DE")
+		lineageTag: ad454f4e-8da1-4ddc-909e-c7ecfefc9be2
+		summarizeBy: none
+		sortByColumn: Wochentag_Nr
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column Wochentag_Nr =
+			
+			WEEKDAY(Flights[fl_date], 2)
+		isHidden
+		formatString: 0
+		lineageTag: 55829530-f5c7-4db5-bd6b-ffe5376380b7
+		summarizeBy: sum
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Dep_Stunde
+		dataType: string
+		isHidden
+		lineageTag: af484152-01ed-4593-b4d0-a6a6c737652c
+		summarizeBy: none
+		sourceColumn: Dep_Stunde
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Arr_Stunde
+		dataType: string
+		isHidden
+		lineageTag: 6b674b03-e166-40e9-b033-f7ccc82653e6
+		summarizeBy: none
+		sourceColumn: Arr_Stunde
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Stunde_relevant
+		dataType: int64
+		formatString: 0
+		lineageTag: db1f618a-6a03-4d9f-9f58-4a40719ee812
+		summarizeBy: sum
+		sourceColumn: Stunde_relevant
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+	column Stunde_Neu = HOUR(Flights[arr_time_neu])
+		formatString: 0
+		lineageTag: 1783e45a-191b-4c53-8d72-695209537e3b
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Flights = m
+		mode: import
+		source =
+				let
+				    Quelle = Value.NativeQuery(PostgreSQL.Database("training-db.stackfuel.com", "Flight_Data"), "SELECT fl_date, op_carrier, origin, dest, crs_dep_time, dep_time, dep_delay, crs_arr_time, arr_time, arr_delay#(lf)FROM flights#(lf)WHERE EXTRACT(YEAR FROM fl_date) >= 2015#(lf)AND (origin = 'LAX' OR dest = 'LAX')#(lf)AND cancelled = FALSE#(lf)AND diverted = FALSE", null, [EnableFolding=true]),
+				    #"Zeiten in Text umgwandelt" = Table.TransformColumnTypes(Quelle,{{"crs_dep_time", type text}, {"dep_time", type text}, {"crs_arr_time", type text}, {"arr_time", type text}}),
+				    #"crs_dep_time hhmmss" = Table.AddColumn(#"Zeiten in Text umgwandelt", "Benutzerdefiniert", each let splitfldate = Splitter.SplitTextByDelimiter(".", QuoteStyle.None)(Text.From([fl_date], "de-DE")) in Text.Combine({Text.PadStart([crs_dep_time], 4, "0"), Text.Middle(splitfldate{2}?, 5, 2)}), type text),
+				    #"dep_time hhmmss" = Table.AddColumn(#"crs_dep_time hhmmss", "Benutzerdefiniert.1", each Text.Combine({Text.PadStart([dep_time], 4, "0"), Text.Middle(Text.From([fl_date], "de-DE"), 11, 2)}), type text),
+				    #"crs_arr_time hhmmss" = Table.AddColumn(#"dep_time hhmmss", "Benutzerdefiniert.2", each let splitfldate = Splitter.SplitTextByDelimiter(".", QuoteStyle.None)(Text.From([fl_date], "de-DE")) in Text.Combine({Text.PadStart([crs_arr_time], 4, "0"), Text.Middle(splitfldate{2}?, 5, 2)}), type text),
+				    #"arr_time hhmmss" = Table.AddColumn(#"crs_arr_time hhmmss", "Benutzerdefiniert.3", each Text.Combine({Text.PadStart([arr_time], 4, "0"), Text.Middle(Text.From([fl_date], "de-DE"), 11, 2)}), type text),
+				    #"240000 ersetzt" = Table.ReplaceValue(#"arr_time hhmmss","240000","235959",Replacer.ReplaceText,{"Benutzerdefiniert", "Benutzerdefiniert.1", "Benutzerdefiniert.2", "Benutzerdefiniert.3"}),
+				    #"Datentyp auf Zeit abgeändert" = Table.TransformColumnTypes(#"240000 ersetzt",{{"Benutzerdefiniert", type time}, {"Benutzerdefiniert.1", type time}, {"Benutzerdefiniert.2", type time}, {"Benutzerdefiniert.3", type time}}),
+				    #"Benutzerdefinierte Spalten umbenannt" = Table.RenameColumns(#"Datentyp auf Zeit abgeändert",{{"Benutzerdefiniert", "crs_dep_time_neu"}, {"Benutzerdefiniert.1", "dep_time_neu"}, {"Benutzerdefiniert.2", "crs_arr_time_neu"}, {"Benutzerdefiniert.3", "arr_time_neu"}}),
+				    #"bedingte Spalte Flugrichtung" = Table.AddColumn(#"Benutzerdefinierte Spalten umbenannt", "Flugrichtung", each if [origin] = "LAX" then "Abflug LA" else "Ankunft LA"),
+				    #"absolut dep_delay" = Table.AddColumn(#"bedingte Spalte Flugrichtung", "dep_delay_abs", each Number.Abs([dep_delay])),
+				    #"absolut arr_delay" = Table.AddColumn(#"absolut dep_delay", "arr_delay_abs", each Number.Abs([arr_delay])),
+				    #"absolut Verspätung" = Table.AddColumn(#"absolut arr_delay", "Verspätung_abs", each if [Flugrichtung] = "Abflug LA" then
+				    [dep_delay_abs]
+				else
+				    [arr_delay_abs]),
+				    #"Unpünktlich (bedingte Spalte)" = Table.AddColumn(#"absolut Verspätung", "Unpünktlich", each if [Verspätung_abs] >= 5 then "Ja" else "Nein"),
+				    #"Entfernte Spalten" = Table.RemoveColumns(#"Unpünktlich (bedingte Spalte)",{"crs_dep_time", "dep_time", "crs_arr_time", "arr_time"}),
+				    #"Datenformatierung alle Spalten" = Table.TransformColumnTypes(#"Entfernte Spalten",{{"fl_date", type datetime}, {"dep_delay_abs", Int64.Type}, {"arr_delay_abs", Int64.Type}, {"Verspätung_abs", Int64.Type}, {"Unpünktlich", type text}, {"Flugrichtung", type text}, {"arr_delay", Int64.Type}, {"dep_delay", Int64.Type}}),
+				    #"fl_date Format DATUM" = Table.TransformColumnTypes(#"Datenformatierung alle Spalten",{{"fl_date", type date}}),
+				    #"Kalenderwoche hinzugefügt" = Table.AddColumn(#"fl_date Format DATUM", "Kalenderwoche", each Date.WeekOfYear([fl_date], Day.Monday)),
+				    Unpünktlichkeit_neu = Table.AddColumn(#"Kalenderwoche hinzugefügt", "Unpünktlich umgewandelt", each if [Unpünktlich] = "Ja" then 1 else 0),
+				    #"Unpünktlichkeit Zahl" = Table.TransformColumnTypes(Unpünktlichkeit_neu,{{"Unpünktlich umgewandelt", Int64.Type}, {"fl_date", type datetime}, {"dep_delay", Int64.Type}, {"arr_delay", Int64.Type}, {"dep_time_neu", type text}, {"arr_time_neu", type text}}),
+				    #"Dep_Stunde hinzugefügt" = Table.AddColumn(#"Unpünktlichkeit Zahl", "Dep_Stunde", each let
+				    raw = try Text.From([dep_time_neu]) otherwise null,
+				    digits = if raw = null then null else Text.Select(raw, {"0".."9"}),
+				    padded = if digits = null or digits = "" then null else Text.PadStart(digits, 4, "0"),
+				    hh = if padded = null then null else Text.Start(padded, 2),
+				    hour = try Number.FromText(hh) otherwise null
+				in
+				    hour),
+				    #"Arr_Stunde hinzugefügt" = Table.AddColumn(#"Dep_Stunde hinzugefügt", "Arr_Stunde", each let
+				    raw = try Text.From([arr_time_neu]) otherwise null,
+				    digits = if raw = null then null else Text.Select(raw, {"0".."9"}),
+				    padded = if digits = null or digits = "" then null else Text.PadStart(digits, 4, "0"),
+				    hh = if padded = null then null else Text.Start(padded, 2),
+				    hour = try Number.FromText(hh) otherwise null
+				in
+				    hour),
+				    #"Stunde_relevant gemeinsam" = Table.AddColumn(#"Arr_Stunde hinzugefügt", "Stunde_relevant", each if [Flugrichtung] = "Abflug LA" then [Dep_Stunde] else [Arr_Stunde]),
+				    #"Geänderter Typ" = Table.TransformColumnTypes(#"Stunde_relevant gemeinsam",{{"dep_time_neu", type time}, {"arr_time_neu", type time}})
+				in
+				    #"Geänderter Typ"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

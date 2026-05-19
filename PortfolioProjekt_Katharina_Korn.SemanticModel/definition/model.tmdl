@@ -1,0 +1,24 @@
+model Model
+	culture: de-DE
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: de-DE
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["Flights","UNIQUE_CARRIERS"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.146.1026.0 (25.08)+fb98ab832373de81dccd5c01cd96306a48477556
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table Flights
+ref table DateTableTemplate_485cbed7-2bea-4621-8fba-093c15706687
+ref table LocalDateTable_360f2c5f-2e85-4a4d-8c95-710f89c04204
+ref table UNIQUE_CARRIERS
+ref table MyMesaure
+
+ref cultureInfo de-DE
+

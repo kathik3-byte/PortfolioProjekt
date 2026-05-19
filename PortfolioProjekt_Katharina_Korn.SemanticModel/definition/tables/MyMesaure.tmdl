@@ -1,0 +1,153 @@
+table MyMesaure
+	lineageTag: 23ff37d0-27e7-4712-95d6-cfc9e8615529
+
+	measure Airline_hat_LAX_Flüge = ```
+			
+			CALCULATE(
+			    COUNTROWS(Flights),
+			    Flights[origin] = "LAX"
+			        || Flights[dest] = "LAX"
+			)
+			
+			```
+		formatString: 0
+		lineageTag: ad0c59a7-ec01-480f-a917-0e77ad33d1a8
+
+	measure Anteil_je_Airline = ```
+			
+			DIVIDE(
+			    COUNTROWS(Flights),
+			    CALCULATE(COUNTROWS(Flights), ALL(Flights)),
+			    0
+			)
+			
+			```
+		isHidden
+		lineageTag: c08a40dd-7b69-4d63-9fa8-3b8e19bad674
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Anteil_Unpünktlich = ```
+			
+			VAR TotalFlights = COUNTROWS(Flights)
+			VAR LateFlights = SUM(Flights[Unpünktlich umgewandelt])
+			RETURN
+			DIVIDE(LateFlights, TotalFlights, 0)
+			
+			```
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		lineageTag: ad2547f4-2d1f-44b7-83a3-c42451db2de7
+
+	measure Anteil_Unpünktlich_Airline =
+			
+			VAR TotalFlights =
+			    CALCULATE(
+			        COUNTROWS(Flights),
+			        Flights[origin] = "LAX" || Flights[dest] = "LAX"
+			    )
+			VAR LateFlights =
+			    CALCULATE(
+			        SUM(Flights[Unpünktlich umgewandelt]),
+			        Flights[origin] = "LAX" || Flights[dest] = "LAX"
+			    )
+			RETURN
+			DIVIDE(LateFlights, TotalFlights)
+		formatString: 0.00\ %;-0.00\ %;0.00\ %
+		isHidden
+		lineageTag: 2ad87e65-f54a-4297-8db0-7168ce870a7a
+
+	measure Anzahl_Flüge_LAX = ```
+			
+			CALCULATE(
+			    COUNTROWS(Flights),
+			    FILTER(
+			        Flights,
+			        Flights[origin] = "LAX" || Flights[dest] = "LAX"
+			    )
+			)
+			
+			```
+		formatString: 0.00
+		lineageTag: ebd7df32-4760-4c1a-8e71-5afd151fc177
+
+	measure Ø_Unpünktlichkeit_ALT = ```
+			
+			DIVIDE(
+			    SUMX(
+			        FILTER(Flights, MyMesaure[Unpünktliche_Flüge] = 1),
+			        Flights[Verspätung_abs]
+			    ),
+			    COUNTROWS(
+			        FILTER(Flights, MyMesaure[Unpünktliche_Flüge] = 1)
+			    )
+			)
+			
+			```
+		isHidden
+		lineageTag: 4581608d-43a5-45e6-a64d-4c9b03a21bde
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Ø_Unpünktlichkeit =
+			
+			CALCULATE(
+			    AVERAGE(Flights[Verspätung_abs]),
+			    Flights[Verspätung_abs] >= 5
+			)
+		lineageTag: 930b0e51-8ea1-458c-b568-0e9a7d0a844a
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Ø_Unpünktlichkeit_pro_Airline =
+			
+			VAR LateFlights =
+			    FILTER(
+			        Flights,
+			        Flights[Unpünktlich umgewandelt] = 1
+			            && (Flights[origin] = "LAX" || Flights[dest] = "LAX")
+			    )
+			VAR CountLate = COUNTROWS(LateFlights)
+			VAR SumLate = SUMX(LateFlights, Flights[Verspätung_abs])
+			RETURN
+			IF(CountLate = 0, BLANK(), DIVIDE(SumLate, CountLate))
+		lineageTag: cc22598d-0dc4-4fb0-b4c1-190379ca0cbd
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Unpünktliche_Flüge = SUM(Flights[Unpünktlich umgewandelt])
+		formatString: 0
+		isHidden
+		lineageTag: cc5c9baf-884b-4255-a573-643a9492217d
+
+		annotation PBI_FormatHint = {"isDecimal":true}
+
+	measure Unpünktliche_Flüge_LAX = ```
+			
+			CALCULATE(
+			    SUM(Flights[Unpünktlich umgewandelt]),
+			    FILTER(
+			        Flights,
+			        Flights[origin] = "LAX" || Flights[dest] = "LAX"
+			    )
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 620c98f7-341d-4dca-9654-2f6e1d4aa5af
+
+	column Column
+		isHidden
+		formatString: 0
+		lineageTag: debd1ffb-8a18-4f57-b8a3-77f4e9d40456
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Column]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition MyMesaure = calculated
+		mode: import
+		source = Row("Column", BLANK())
+
+	annotation PBI_Id = d0398e00630a46e89a8607dd6aed7853
+

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Datenanalyse_Mikroplastik"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "455d174b-a56d-4bc9-9c72-63d7bcb95318"
+  }
+}

@@ -54,24 +54,6 @@
           "z": 8000.00
         },
         {
-          "config": "{\"name\":\"4b11058c45f29619cc1d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":947.6457229371689,\"y\":85.26873580620742,\"z\":1000,\"width\":314.91294473883426,\"height\":172.47539742619227,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"projections\":{\"Data\":[{\"queryRef\":\"Flights.Ø_Unpünktlichkeit\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MyMesaure\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Ø_Unpünktlichkeit_ALT\"},\"Name\":\"Flights.Ø_Unpünktlichkeit\",\"NativeReferenceName\":\"Ø Unpünktlichkeit pro unpünktlichem Flug (Minuten)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Ø_Unpünktlichkeit_ALT\"}}}]},\"columnProperties\":{\"Flights.Ø_Unpünktlichkeit\":{\"displayName\":\"Ø Unpünktlichkeit pro unpünktlichem Flug (Minuten)\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"value\":[{\"properties\":{\"textWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"id\":\"default\"}}],\"label\":[{\"properties\":{\"textWrap\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualTooltip\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
-          "filters": "[]",
-          "height": 172.48,
-          "width": 314.91,
-          "x": 947.65,
-          "y": 85.27,
-          "z": 1000.00
-        },
-        {
-          "config": "{\"name\":\"662ef5fb2d63e5d161ca\",\"layouts\":[{\"id\":0,\"position\":{\"x\":952.4905374716125,\"y\":257.7441332323997,\"z\":2000,\"width\":306.19227857683575,\"height\":92.05147615442847,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"advancedSlicerVisual\",\"projections\":{\"Values\":[{\"queryRef\":\"Flights.Flugrichtung\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"Flights\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Flugrichtung\"},\"Name\":\"Flights.Flugrichtung\",\"NativeReferenceName\":\"Flugrichtung\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{}}],\"layout\":[{\"properties\":{\"rowCount\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}},\"columnCount\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}}}}]}}}",
-          "filters": "[]",
-          "height": 92.05,
-          "width": 306.19,
-          "x": 952.49,
-          "y": 257.74,
-          "z": 2000.00
-        },
-        {
           "config": "{\"name\":\"814da385a9df03553e87\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":4.440589765828274,\"z\":9000,\"width\":784.8742411101474,\"height\":81.04076322636601,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Überblick: Flüge und Unpünktlichkeit am Flughafen Los Angeles (LAX)\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"16pt\"}}]},{\"textRuns\":[{\"value\":\"Kennzahlen zur Flugaktivität und Pünktlichkeit aus LAX-Perspektive\",\"textStyle\":{\"fontSize\":\"12pt\"}}]}]}}]}}}",
           "filters": "[]",
           "height": 81.04,

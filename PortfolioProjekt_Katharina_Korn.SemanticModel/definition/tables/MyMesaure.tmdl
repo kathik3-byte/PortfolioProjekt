@@ -1,18 +1,6 @@
 table MyMesaure
 	lineageTag: 23ff37d0-27e7-4712-95d6-cfc9e8615529
 
-	measure Airline_hat_LAX_Flüge = ```
-			
-			CALCULATE(
-			    COUNTROWS(Flights),
-			    Flights[origin] = "LAX"
-			        || Flights[dest] = "LAX"
-			)
-			
-			```
-		formatString: 0
-		lineageTag: ad0c59a7-ec01-480f-a917-0e77ad33d1a8
-
 	measure Anteil_je_Airline = ```
 			
 			DIVIDE(

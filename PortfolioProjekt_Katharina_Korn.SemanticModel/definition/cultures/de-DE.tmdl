@@ -1747,29 +1747,6 @@ cultureInfo de-DE
 			        }
 			      ]
 			    },
-			    "flight.airline_hat_LAX_flüge": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "MyMesaure",
-			          "ConceptualProperty": "Airline_hat_LAX_Flüge"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "airline hat LAX flüge": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "Airline_hat_LAX_Flüge": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        }
-			      ]
-			    },
 			    "flight.Ø_unpünktlichkeit_pro_airline": {
 			      "Definition": {
 			        "Binding": {

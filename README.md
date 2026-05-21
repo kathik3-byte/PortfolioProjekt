@@ -1,6 +1,6 @@
-# [DEIN PROJEKTTITEL HIER] 🚀
+# Analyse globaler Mikroplastik-Hotspts in den Weltmeeren 🚀
 
-> Eine kurze, prägnante Beschreibung deines Data Science Projekts in 1-2 Sätzen.
+> Visualisierung und Untersuchung räumlicher sowie zeitlicher Muster mithilfe von Power BI
 
 ## 📊 Projektübersicht
 

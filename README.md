@@ -1,4 +1,4 @@
-# Analyse globaler Mikroplastik-Hotspts in den Weltmeeren 🚀
+# Analyse globaler Mikroplastik-Hots0pts in den Weltmeeren 
 
 > Visualisierung und Untersuchung räumlicher sowie zeitlicher Muster mithilfe von Power BI
 

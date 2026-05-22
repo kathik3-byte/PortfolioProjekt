@@ -1,10 +1,10 @@
-# Analyse globaler Mikroplastik-Hotspots in den Weltmeeren TEST
+# Analyse globaler Mikroplastik-Hotspots in den Weltmeeren 
 
 > Visualisierung und Untersuchung räumlicher sowie zeitlicher Muster mithilfe von Power BI
 
 ## 📊 Projektübersicht
 
-<!-- Dieses Projekt untersucht die globale Verbreitung von Mikroplastik in den Weltmeeren anhand von Datensätzen der NOAA Marine Microplastics Database. Ziel ist es, geografische Hotspots der Mikroplastikbelastung zu identifizieren, zeitliche Entwicklungen sichtbar zu machen und räumliche Muster der Verschmutzung zu analysieren.
+<!-- TESTDieses Projekt untersucht die globale Verbreitung von Mikroplastik in den Weltmeeren anhand von Datensätzen der NOAA Marine Microplastics Database. Ziel ist es, geografische Hotspots der Mikroplastikbelastung zu identifizieren, zeitliche Entwicklungen sichtbar zu machen und räumliche Muster der Verschmutzung zu analysieren.
 
 Die Analyse wird mithilfe von Microsoft Power BI durchgeführt und kombiniert Datenaufbereitung, explorative Datenanalyse sowie interaktive Visualisierungen in Form eines Dashboards. -->
 

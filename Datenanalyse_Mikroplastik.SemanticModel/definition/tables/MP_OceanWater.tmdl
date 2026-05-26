@@ -1,6 +1,20 @@
 table MP_OceanWater
 	lineageTag: 732e5151-372d-4b8d-a12b-bbe64fcc34af
 
+	measure Durchschnitt_MP = AVERAGE('MP_OceanWater'[Mikroplastik Menge])
+		lineageTag: f673c51c-0e23-4616-b627-0b0e904fa878
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Max_MP = MAX('MP_OceanWater'[Mikroplastik Menge])
+		lineageTag: 8b52ff54-d723-4c7e-9043-2a2c7b25e9be
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Messungen = COUNT('MP_OceanWater'[Mikroplastik Menge])
+		formatString: 0
+		lineageTag: 2835c6c0-aff1-40df-8396-543bd7e0884d
+
 	column Objekt
 		dataType: string
 		lineageTag: 74c8251d-32e4-4789-9c35-ab8938dc7e28
@@ -11,9 +25,12 @@ table MP_OceanWater
 
 	column Breitengrad
 		dataType: double
+		isHidden
 		lineageTag: 5147ce1a-152f-4c32-b97f-274da06bc72e
 		summarizeBy: sum
 		sourceColumn: Breitengrad
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -21,9 +38,12 @@ table MP_OceanWater
 
 	column Längengrad
 		dataType: double
+		isHidden
 		lineageTag: 532c0aa9-caa1-4867-ac99-2ef6c1c3e6a7
 		summarizeBy: sum
 		sourceColumn: Längengrad
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -124,6 +144,7 @@ table MP_OceanWater
 	column 'Breitengrad dez'
 		dataType: double
 		lineageTag: 3bff0006-526c-4665-bf70-6c46f80e55b1
+		dataCategory: Latitude
 		summarizeBy: sum
 		sourceColumn: Breitengrad dez
 
@@ -134,6 +155,7 @@ table MP_OceanWater
 	column 'Längengrad dez'
 		dataType: double
 		lineageTag: 68b0f0a9-0414-4ac2-87a8-1461cb7c29c5
+		dataCategory: Longitude
 		summarizeBy: sum
 		sourceColumn: Längengrad dez
 

@@ -280,9 +280,18 @@ table Marine_Microplastics_NOAA
 				    #"Barents Sea ersetzt" = Table.ReplaceValue(#"Gefilterte Zeilen","Barentsz Sea","Barents Sea",Replacer.ReplaceText,{"Region"}),
 				    #"East China Sea ersetzt" = Table.ReplaceValue(#"Barents Sea ersetzt","Eastern China Sea","East China Sea",Replacer.ReplaceText,{"Region"}),
 				    #"Rio de la Plata ersetzt" = Table.ReplaceValue(#"East China Sea ersetzt","Rio de La Plata","Rio de la Plata",Replacer.ReplaceText,{"Region"}),
-				    #"Relevante Spalte Meeresumgebung" = Table.RenameColumns(#"Rio de la Plata ersetzt",{{"Marine Setting", "Meeresumgebung"}})
+				    #"Relevante Spalte Meeresumgebung" = Table.RenameColumns(#"Rio de la Plata ersetzt",{{"Marine Setting", "Meeresumgebung"}}),
+				    #"Bereinigter Text" = Table.TransformColumns(#"Relevante Spalte Meeresumgebung",{{"Region", Text.Clean, type text}}),
+				    #"Abgeschnittener Text" = Table.TransformColumns(#"Bereinigter Text",{{"Region", Text.Trim, type text}}),
+				    #"Gefilterte Zeilen1" = Table.SelectRows(#"Abgeschnittener Text", each true),
+				    #"Unknown Region" = Table.ReplaceValue(#"Gefilterte Zeilen1","","Unknown Region",Replacer.ReplaceValue,{"Region"}),
+				    #"Unknown Ocean" = Table.ReplaceValue(#"Unknown Region","","Unknown Ocean",Replacer.ReplaceValue,{"Ozean"}),
+				    #"Ersetzter Wert" = Table.ReplaceValue(#"Unknown Ocean",null,"Unknown Ocean",Replacer.ReplaceValue,{"Ozean"}),
+				    #"Gefilterte Zeilen2" = Table.SelectRows(#"Ersetzter Wert", each true),
+				    #"Gefilterte Zeilen3" = Table.SelectRows(#"Gefilterte Zeilen2", each [Breitengrad dez] >= -90 and [Breitengrad dez] <= 90),
+				    #"Gefilterte Zeilen4" = Table.SelectRows(#"Gefilterte Zeilen3", each [Längengrad dez] >= -180 and [Längengrad dez] <= 180)
 				in
-				    #"Relevante Spalte Meeresumgebung"
+				    #"Gefilterte Zeilen4"
 
 	annotation PBI_NavigationStepName = Navigation
 

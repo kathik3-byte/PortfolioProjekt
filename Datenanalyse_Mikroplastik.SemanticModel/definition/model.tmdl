@@ -1,9 +1,30 @@
 model Model
 	culture: de-DE
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: de-DE
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
 
 annotation PBI_ProTooling = ["DevMode"]
 
 annotation PBIDesktopVersion = 2.146.1026.0 (25.08)+fb98ab832373de81dccd5c01cd96306a48477556
+
+annotation PBI_QueryOrder = ["Marine_Microplastics_NOAA","MP_OceanWater","MP_Sediment","MP_Nurdle","MP_Beach"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+ref table Marine_Microplastics_NOAA
+ref table DateTableTemplate_513d9335-d98e-41a0-beef-92766691130f
+ref table LocalDateTable_703415c6-ef9d-444d-b5ac-109b411d615c
+ref table MP_OceanWater
+ref table LocalDateTable_a098a780-709b-4898-8465-ab28a728d77f
+ref table MP_Sediment
+ref table LocalDateTable_cd66ec92-f111-45d1-bbfc-d4fee2cc474f
+ref table MP_Nurdle
+ref table LocalDateTable_96f6eb72-a559-481a-b4d9-e4b251c25f71
+ref table MP_Beach
+ref table LocalDateTable_1490e444-0e0e-4816-a351-ac9f7e1e119a
 
 ref cultureInfo de-DE
 

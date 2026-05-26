@@ -7,7 +7,72 @@
         "x": 0,
         "y": 0
       },
-      "nodes": [],
+      "nodes": [
+        {
+          "location": {
+            "x": 1136,
+            "y": 0
+          },
+          "nodeIndex": "Marine_Microplastics_NOAA",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "nodeIndex": "MP_Beach",
+          "nodeLineageTag": "9ae5a6cf-350f-4c17-9fc3-a90e851719f0",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 284,
+            "y": 0
+          },
+          "nodeIndex": "MP_Nurdle",
+          "nodeLineageTag": "dea9f562-2797-4948-b1ca-d0bb6a37ff57",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 568,
+            "y": 0
+          },
+          "nodeIndex": "MP_OceanWater",
+          "nodeLineageTag": "732e5151-372d-4b8d-a12b-bbe64fcc34af",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 852,
+            "y": 0
+          },
+          "nodeIndex": "MP_Sediment",
+          "nodeLineageTag": "ebcb48ae-43e6-4d33-acab-14b7f195b66f",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
       "name": "Alle Tabellen",
       "zoomValue": 100,
       "pinKeyFieldsToTop": false,

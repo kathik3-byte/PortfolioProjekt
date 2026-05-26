@@ -1,0 +1,157 @@
+table MP_Nurdle
+	lineageTag: dea9f562-2797-4948-b1ca-d0bb6a37ff57
+
+	column Objekt
+		dataType: string
+		lineageTag: a21c05be-2bad-4a4f-9a53-006dc5ca9ba2
+		summarizeBy: none
+		sourceColumn: Objekt
+
+		annotation SummarizationSetBy = Automatic
+
+	column Breitengrad
+		dataType: double
+		lineageTag: 19300c66-9e40-4aaa-836e-3c9d4cab9dae
+		summarizeBy: sum
+		sourceColumn: Breitengrad
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Längengrad
+		dataType: double
+		lineageTag: 83f84897-482d-4c95-bd5d-791d1e6d8557
+		summarizeBy: sum
+		sourceColumn: Längengrad
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Ozean
+		dataType: string
+		lineageTag: 26e08081-12e9-41ce-9212-5b002df5472e
+		summarizeBy: none
+		sourceColumn: Ozean
+
+		annotation SummarizationSetBy = Automatic
+
+	column Region
+		dataType: string
+		lineageTag: c3d0952f-33da-4afa-a762-b5d51b0a2fc7
+		summarizeBy: none
+		sourceColumn: Region
+
+		annotation SummarizationSetBy = Automatic
+
+	column Meeresumgebung
+		dataType: string
+		lineageTag: f72ff186-fc82-4ba3-8149-4cba0ba17ab4
+		summarizeBy: none
+		sourceColumn: Meeresumgebung
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mikroplastik Menge'
+		dataType: double
+		lineageTag: 9c5f5c65-7221-4eae-a81f-485561d38d58
+		summarizeBy: sum
+		sourceColumn: Mikroplastik Menge
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Einheit
+		dataType: string
+		lineageTag: 83dca060-7479-476a-82f4-2791e09743ee
+		summarizeBy: none
+		sourceColumn: Einheit
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Konzentration Range'
+		dataType: string
+		lineageTag: 0524fbee-609e-4ab3-b97b-e613cac0904b
+		summarizeBy: none
+		sourceColumn: Konzentration Range
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Konzentration Klasse'
+		dataType: string
+		lineageTag: 5543c91a-54f9-4c4c-96cd-7b6e9d3ab501
+		summarizeBy: none
+		sourceColumn: Konzentration Klasse
+
+		annotation SummarizationSetBy = Automatic
+
+	column Datum
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: e7bfb3f2-d9b2-44af-9440-50ce26f8663c
+		summarizeBy: none
+		sourceColumn: Datum
+
+		variation Variation
+			isDefault
+			relationship: 5158eb2b-048b-4c69-85b6-1fb6abfe5273
+			defaultHierarchy: LocalDateTable_96f6eb72-a559-481a-b4d9-e4b251c25f71.Datumshierarchie
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Jahr
+		dataType: int64
+		formatString: 0
+		lineageTag: a00ff497-06df-4503-8fa0-4d5b14219fcc
+		summarizeBy: sum
+		sourceColumn: Jahr
+
+		annotation SummarizationSetBy = Automatic
+
+	column Monat
+		dataType: int64
+		formatString: 0
+		lineageTag: d7b21db1-08e2-41ea-a18e-31e8f6c3d3c8
+		summarizeBy: sum
+		sourceColumn: Monat
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Breitengrad dez'
+		dataType: double
+		lineageTag: 3fccf255-03ae-48c7-82fd-92ba8ce72aea
+		summarizeBy: sum
+		sourceColumn: Breitengrad dez
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Längengrad dez'
+		dataType: double
+		lineageTag: 197807bb-454b-4614-8a14-3da90ce5a660
+		summarizeBy: sum
+		sourceColumn: Längengrad dez
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition MP_Nurdle = m
+		mode: import
+		source =
+				let
+				    Quelle = Marine_Microplastics_NOAA,
+				    BeachNurdlePatrol = Table.SelectRows(Quelle, each ([Meeresumgebung] = "Beach-Nurdle Patrol")),
+				    #"Entfernte Spalten" = Table.RemoveColumns(BeachNurdlePatrol,{"Water Sample Depth (m)", "Sampling Method", "Mesh Size (mm)", "Short Reference", "Long Reference", "DOI", "Organization", "Keywords", "NCEI Accession Number", "NCEI Accession Link", "Symbology", "GlobalID", "x", "y"})
+				in
+				    #"Entfernte Spalten"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

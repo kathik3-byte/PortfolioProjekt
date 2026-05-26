@@ -1,0 +1,49 @@
+relationship 88c4d01a-55da-4c4d-a8e3-5a6f334f10c2
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Marine_Microplastics_NOAA.Datum
+	toColumn: LocalDateTable_703415c6-ef9d-444d-b5ac-109b411d615c.Date
+
+relationship 1100029f-0fda-4fad-8dc0-3c203137855a
+	joinOnDateBehavior: datePartOnly
+	fromColumn: MP_OceanWater.Datum
+	toColumn: LocalDateTable_a098a780-709b-4898-8465-ab28a728d77f.Date
+
+relationship 64f448d9-f979-462c-8ff0-08718d9039da
+	joinOnDateBehavior: datePartOnly
+	fromColumn: MP_Sediment.Datum
+	toColumn: LocalDateTable_cd66ec92-f111-45d1-bbfc-d4fee2cc474f.Date
+
+relationship 5158eb2b-048b-4c69-85b6-1fb6abfe5273
+	joinOnDateBehavior: datePartOnly
+	fromColumn: MP_Nurdle.Datum
+	toColumn: LocalDateTable_96f6eb72-a559-481a-b4d9-e4b251c25f71.Date
+
+relationship b94017db-362e-4048-859f-c58e57e46f23
+	joinOnDateBehavior: datePartOnly
+	fromColumn: MP_Beach.Datum
+	toColumn: LocalDateTable_1490e444-0e0e-4816-a351-ac9f7e1e119a.Date
+
+relationship AutoDetected_077ad4d6-f50a-46ec-a59e-404716c5b349
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: MP_OceanWater.Objekt
+	toColumn: Marine_Microplastics_NOAA.Objekt
+
+relationship AutoDetected_c749f2f3-a4a2-4136-b5eb-5b8eacaffb3f
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: MP_Sediment.Objekt
+	toColumn: Marine_Microplastics_NOAA.Objekt
+
+relationship AutoDetected_476a3646-ca5e-4b35-886a-32e4eb20c391
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: MP_Nurdle.Objekt
+	toColumn: Marine_Microplastics_NOAA.Objekt
+
+relationship AutoDetected_cd90ee76-0c41-4125-9fb5-fbf4c0d7b423
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: MP_Beach.Objekt
+	toColumn: Marine_Microplastics_NOAA.Objekt
+

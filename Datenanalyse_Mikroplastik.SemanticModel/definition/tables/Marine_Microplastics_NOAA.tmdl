@@ -1,6 +1,10 @@
 table Marine_Microplastics_NOAA
 	lineageTag: 72182b45-5ea1-4e36-8e0a-351000617989
 
+	measure Mess = COUNT('Marine_Microplastics_NOAA'[Mikroplastik Menge])
+		formatString: 0
+		lineageTag: f917c146-014a-4bfe-b9c3-c0bab40a757b
+
 	column Objekt
 		dataType: string
 		lineageTag: 44c47107-aff0-4af5-ae79-1f87f8b700fb

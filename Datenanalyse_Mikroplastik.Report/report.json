@@ -1,5 +1,5 @@
 {
-  "config": "{\"version\":\"5.66\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"type\":2,\"version\":{\"visual\":\"1.8.95\",\"report\":\"2.0.95\",\"page\":\"1.3.95\"}}},\"activeSectionIndex\":1,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "config": "{\"version\":\"5.66\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"type\":2,\"version\":{\"visual\":\"1.8.95\",\"report\":\"2.0.95\",\"page\":\"1.3.95\"}}},\"activeSectionIndex\":2,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
   "layoutOptimization": 0,
   "resourcePackages": [
     {
@@ -28,40 +28,85 @@
       "ordinal": 1,
       "visualContainers": [
         {
-          "config": "{\"name\":\"4c958a40631a384cbd58\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.715370018975332,\"y\":0,\"z\":0,\"width\":748.0834914611006,\"height\":435.57242251739405,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"MP_OceanWater.Datum.Variation.Datumshierarchie.Jahr\",\"active\":true}],\"Y\":[{\"queryRef\":\"MP_OceanWater.Durchschnitt_MP\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MP_OceanWater\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Name\":\"Variation\",\"Property\":\"Datum\"}},\"Hierarchy\":\"Datumshierarchie\"}},\"Level\":\"Jahr\"},\"Name\":\"MP_OceanWater.Datum.Variation.Datumshierarchie.Jahr\",\"NativeReferenceName\":\"Datum Jahr\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Durchschnitt_MP\"},\"Name\":\"MP_OceanWater.Durchschnitt_MP\",\"NativeReferenceName\":\"Durchschnitt_MP\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Name\":\"Variation\",\"Property\":\"Datum\"}},\"Hierarchy\":\"Datumshierarchie\"}},\"Level\":\"Jahr\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"trend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"displayName\":{\"expr\":{\"Literal\":{\"Value\":\"'Trendlinie 1'\"}}},\"style\":{\"expr\":{\"Literal\":{\"Value\":\"'dashed'\"}}},\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.5}}}}}}}],\"valueAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Durchschnittliche Konzentration (Stücke/m³)'\"}}},\"gridlineShow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryAxis\":[{\"properties\":{\"gridlineShow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Zeitlicher Trend der Mikroplastikverschmutzung'\"}}}}}]}}}",
+          "config": "{\"name\":\"238d05ebf6d2743a87d7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":7000,\"width\":829.0449082858951,\"height\":68.00759013282733,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Wie hat sich die Mikroplastikbelastung im Zeitverlauf verändert?\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"16pt\"}}]},{\"textRuns\":[{\"value\":\"Untersuchung zeitlicher Trends und Entwicklungen der Mikroplastikverschmutzung über mehrere Jahrzehnte.\",\"textStyle\":{\"fontSize\":\"12pt\"}}]}]}}]}}}",
           "filters": "[]",
-          "height": 435.57,
-          "width": 748.08,
-          "x": 9.72,
+          "height": 68.01,
+          "width": 829.04,
+          "x": 0.00,
           "y": 0.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"435e6e68bdc39615df3f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":663.8836179633144,\"y\":594.2567994939911,\"z\":8000,\"width\":569.9683744465528,\"height\":126.29981024667933,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Kernerkenntnisse\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"12pt\"}}]},{\"textRuns\":[{\"value\":\"Langfristig steigender Trend der Mikroplastikbelastung\",\"textStyle\":{\"fontSize\":\"12pt\"}}],\"listType\":\"bullet\"},{\"textRuns\":[{\"value\":\"Höchste Konzentrationen ab ca. 2010 beobachtet\",\"textStyle\":{\"fontSize\":\"12pt\"}}],\"listType\":\"bullet\"},{\"textRuns\":[{\"value\":\"Extreme Spitzenwerte können durch regionale Hotspots beeinflusst sein\",\"textStyle\":{\"fontSize\":\"12pt\"}}],\"listType\":\"bullet\"},{\"textRuns\":[{\"value\":\"Datengrundlage: 8.991 validierte Messungen\",\"textStyle\":{\"fontSize\":\"12pt\"}}],\"listType\":\"bullet\"}]}}]}}}",
+          "filters": "[]",
+          "height": 126.30,
+          "width": 569.97,
+          "x": 663.88,
+          "y": 594.26,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"4c958a40631a384cbd58\",\"layouts\":[{\"id\":0,\"position\":{\"x\":24.28842504743833,\"y\":181.35357368753955,\"z\":0,\"width\":1209.5635673624288,\"height\":356.2302340290955,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"MP_OceanWater.Datum.Variation.Datumshierarchie.Jahr\",\"active\":true}],\"Y\":[{\"queryRef\":\"MP_OceanWater.Durchschnitt_MP\"}],\"Tooltips\":[{\"queryRef\":\"MP_OceanWater.Messungen\"},{\"queryRef\":\"MP_OceanWater.Max_MP\"},{\"queryRef\":\"Min(MP_OceanWater.Ozean)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MP_OceanWater\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Name\":\"Variation\",\"Property\":\"Datum\"}},\"Hierarchy\":\"Datumshierarchie\"}},\"Level\":\"Jahr\"},\"Name\":\"MP_OceanWater.Datum.Variation.Datumshierarchie.Jahr\",\"NativeReferenceName\":\"Datum Jahr\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Durchschnitt_MP\"},\"Name\":\"MP_OceanWater.Durchschnitt_MP\",\"NativeReferenceName\":\"Durchschnitt_MP\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Messungen\"},\"Name\":\"MP_OceanWater.Messungen\",\"NativeReferenceName\":\"Messungen\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Max_MP\"},\"Name\":\"MP_OceanWater.Max_MP\",\"NativeReferenceName\":\"Max_MP\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Ozean\"}},\"Function\":3},\"Name\":\"Min(MP_OceanWater.Ozean)\",\"NativeReferenceName\":\"Erstes Datum: Ozean\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Name\":\"Variation\",\"Property\":\"Datum\"}},\"Hierarchy\":\"Datumshierarchie\"}},\"Level\":\"Jahr\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"trend\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"displayName\":{\"expr\":{\"Literal\":{\"Value\":\"'Trendlinie 1'\"}}},\"style\":{\"expr\":{\"Literal\":{\"Value\":\"'dashed'\"}}},\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.5}}}}},\"width\":{\"expr\":{\"Literal\":{\"Value\":\"3D\"}}}}}],\"valueAxis\":[{\"properties\":{\"titleText\":{\"expr\":{\"Literal\":{\"Value\":\"'Ø Mikroplastikkonzentration (Stück/m³)'\"}}},\"gridlineShow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"logAxisScale\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"categoryAxis\":[{\"properties\":{\"gridlineShow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Entwicklung der Mikroplastikbelastung'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 356.23,
+          "width": 1209.56,
+          "x": 24.29,
+          "y": 181.35,
           "z": 0.00
         },
         {
-          "config": "{\"name\":\"87fb51c2dd5f0699e44f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":770.752688172043,\"y\":24.28842504743833,\"z\":2000,\"width\":166.78051865907653,\"height\":103.63061353573688,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"MP_OceanWater.Ozean\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MP_OceanWater\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Ozean\"},\"Name\":\"MP_OceanWater.Ozean\",\"NativeReferenceName\":\"Ozean\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}}}}]}}}",
+          "config": "{\"name\":\"6ebb223b15b205dc9de5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":340.03795066413664,\"y\":72.865275142315,\"z\":5000,\"width\":299,\"height\":92.29601518026566,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"MP_OceanWater.Messungen\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MP_OceanWater\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Messungen\"},\"Name\":\"MP_OceanWater.Messungen\",\"NativeReferenceName\":\"Messungen\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Messungen\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 92.30,
+          "width": 299.00,
+          "x": 340.04,
+          "y": 72.87,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"87fb51c2dd5f0699e44f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1080.0253004427577,\"y\":92.29601518026566,\"z\":2000,\"width\":197.54585705249843,\"height\":92.29601518026566,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"MP_OceanWater.Ozean\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MP_OceanWater\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Ozean\"},\"Name\":\"MP_OceanWater.Ozean\",\"NativeReferenceName\":\"Ozean\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
           "filters": "[{\"name\":\"b4b4fec52744ae747c9a\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"MP_OceanWater\"}},\"Property\":\"Ozean\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MP_OceanWater\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Ozean\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"null\"}}]]}}}}}]},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false,\"isLockedInViewMode\":true}]",
-          "height": 103.63,
-          "width": 166.78,
-          "x": 770.75,
-          "y": 24.29,
+          "height": 92.30,
+          "width": 197.55,
+          "x": 1080.03,
+          "y": 92.30,
           "z": 2000.00
         },
         {
-          "config": "{\"name\":\"9062cca28cc23f2359b2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":446,\"width\":748,\"height\":274,\"z\":1000,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"MP_OceanWater.Datum.Variation.Datumshierarchie.Jahr\",\"active\":true}],\"Y\":[{\"queryRef\":\"MP_OceanWater.Messungen\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MP_OceanWater\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Name\":\"Variation\",\"Property\":\"Datum\"}},\"Hierarchy\":\"Datumshierarchie\"}},\"Level\":\"Jahr\"},\"Name\":\"MP_OceanWater.Datum.Variation.Datumshierarchie.Jahr\",\"NativeReferenceName\":\"Datum Jahr\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Messungen\"},\"Name\":\"MP_OceanWater.Messungen\",\"NativeReferenceName\":\"Messungen\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Name\":\"Variation\",\"Property\":\"Datum\"}},\"Hierarchy\":\"Datumshierarchie\"}},\"Level\":\"Jahr\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "config": "{\"name\":\"9062cca28cc23f2359b2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":24.28842504743833,\"y\":537.5838077166351,\"z\":1000,\"width\":650.9297912713473,\"height\":182.97280202403542,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"MP_OceanWater.Datum.Variation.Datumshierarchie.Jahr\",\"active\":true}],\"Y\":[{\"queryRef\":\"MP_OceanWater.Messungen\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MP_OceanWater\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Name\":\"Variation\",\"Property\":\"Datum\"}},\"Hierarchy\":\"Datumshierarchie\"}},\"Level\":\"Jahr\"},\"Name\":\"MP_OceanWater.Datum.Variation.Datumshierarchie.Jahr\",\"NativeReferenceName\":\"Datum Jahr\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Messungen\"},\"Name\":\"MP_OceanWater.Messungen\",\"NativeReferenceName\":\"Messungen\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Name\":\"Variation\",\"Property\":\"Datum\"}},\"Hierarchy\":\"Datumshierarchie\"}},\"Level\":\"Jahr\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0.4}}}}}}}],\"valueAxis\":[{\"properties\":{\"gridlineShow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryAxis\":[{\"properties\":{\"gridlineShow\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Verteilung der Messungen nach Jahr'\"}}}}}]}}}",
           "filters": "[]",
-          "height": 274.00,
-          "width": 748.00,
-          "x": 10.00,
-          "y": 446.00,
+          "height": 182.97,
+          "width": 650.93,
+          "x": 24.29,
+          "y": 537.58,
           "z": 1000.00
         },
         {
-          "config": "{\"name\":\"c330dc481d0264860912\",\"layouts\":[{\"id\":0,\"position\":{\"x\":966.6793168880456,\"y\":24.28842504743833,\"z\":3000,\"width\":216.9765970904491,\"height\":87.43833017077799,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"MP_OceanWater.Konzentration Klasse\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MP_OceanWater\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Konzentration Klasse\"},\"Name\":\"MP_OceanWater.Konzentration Klasse\",\"NativeReferenceName\":\"Konzentration Klasse\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}}}}]}}}",
+          "config": "{\"name\":\"a216f157c04d0743071d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":655.787476280835,\"y\":72.865275142315,\"z\":6000,\"width\":299.5572422517394,\"height\":92.29601518026566,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"MP_OceanWater.Zeitraum\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MP_OceanWater\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Zeitraum\"},\"Name\":\"MP_OceanWater.Zeitraum\",\"NativeReferenceName\":\"Zeitraum\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 92.30,
+          "width": 299.56,
+          "x": 655.79,
+          "y": 72.87,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"c330dc481d0264860912\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1080.0253004427577,\"y\":0,\"z\":3000,\"width\":197.54585705249843,\"height\":92.29601518026566,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"MP_OceanWater.Konzentration Klasse\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MP_OceanWater\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Konzentration Klasse\"},\"Name\":\"MP_OceanWater.Konzentration Klasse\",\"NativeReferenceName\":\"Konzentration Klasse\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
           "filters": "[{\"name\":\"75ad115dd2e31c85eb41\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"MP_OceanWater\"}},\"Property\":\"Konzentration Klasse\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MP_OceanWater\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Konzentration Klasse\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"null\"}}]]}}}}}]},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false,\"isLockedInViewMode\":true}]",
-          "height": 87.44,
-          "width": 216.98,
-          "x": 966.68,
-          "y": 24.29,
+          "height": 92.30,
+          "width": 197.55,
+          "x": 1080.03,
+          "y": 0.00,
           "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"cfe49e537f4d3d9d021e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":24.28842504743833,\"y\":72.865275142315,\"z\":4000,\"width\":299.5572422517394,\"height\":92.29601518026566,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"MP_OceanWater.Durchschnitt_MP\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MP_OceanWater\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Durchschnitt_MP\"},\"Name\":\"MP_OceanWater.Durchschnitt_MP\",\"NativeReferenceName\":\"Durchschnittliche Mikroplastikbelastung\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Durchschnitt_MP\"}}}]},\"columnProperties\":{\"MP_OceanWater.Durchschnitt_MP\":{\"displayName\":\"Durchschnittliche Mikroplastikbelastung\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"11D\"}}}}}],\"subTitle\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Durchschnittliche Mikroplastikbelastung'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 92.30,
+          "width": 299.56,
+          "x": 24.29,
+          "y": 72.87,
+          "z": 4000.00
         }
       ],
       "width": 1280.00
@@ -75,57 +120,66 @@
       "name": "12ba974558c34cc6f11a",
       "visualContainers": [
         {
-          "config": "{\"name\":\"595076fa6f8e4ad5ff8f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":782.0872865275143,\"y\":542.4414927261228,\"z\":6000,\"width\":147.34977862112586,\"height\":90.67678684376978,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"MP_OceanWater.Jahr\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MP_OceanWater\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Jahr\"},\"Name\":\"MP_OceanWater.Jahr\",\"NativeReferenceName\":\"Jahr\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#e6e6e6'\"}}}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
-          "filters": "[{\"name\":\"6265ee31cec84e7cf361\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"MP_OceanWater\"}},\"Property\":\"Jahr\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MP_OceanWater\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Jahr\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"null\"}}]]}}}}}]},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false,\"isLockedInViewMode\":true}]",
-          "height": 90.68,
-          "width": 147.35,
-          "x": 782.09,
-          "y": 542.44,
-          "z": 6000.00
-        },
-        {
-          "config": "{\"name\":\"71328ae7cd3514fde213\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1023.3523086654017,\"y\":166.78051865907653,\"z\":4000,\"width\":257.4573055028463,\"height\":119.82289690069577,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"MP_OceanWater.Messungen\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MP_OceanWater\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Messungen\"},\"Name\":\"MP_OceanWater.Messungen\",\"NativeReferenceName\":\"Messungen\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Messungen\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Anzahl Messungen'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "config": "{\"name\":\"548658cbf95af775387b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":7000,\"width\":825.8064516129033,\"height\":79.34218848829855,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Welche Regionen weisen die höchste Mikroplastikbelastung auf?\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"16pt\"}}]},{\"textRuns\":[{\"value\":\"Analyse geografischer Hotspots und Vergleich verschiedener Ozeanregionen anhand von Konzentrationswerten.\",\"textStyle\":{\"fontSize\":\"12pt\"}}]}]}}]}}}",
           "filters": "[]",
-          "height": 119.82,
-          "width": 257.46,
-          "x": 1023.35,
-          "y": 166.78,
-          "z": 4000.00
-        },
-        {
-          "config": "{\"name\":\"875ac9d280597af0c1d5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":761.0373181530678,\"y\":4.857685009487666,\"z\":2000,\"width\":254.21884882985452,\"height\":155.4459203036053,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"MP_OceanWater.Durchschnitt_MP\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MP_OceanWater\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Durchschnitt_MP\"},\"Name\":\"MP_OceanWater.Durchschnitt_MP\",\"NativeReferenceName\":\"Durchschnitt_MP\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Durchschnitt_MP\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Durchschnittliche Mikroplastikbelastung'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}}}}],\"subTitle\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Stücke pro m³'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
-          "filters": "[]",
-          "height": 155.45,
-          "width": 254.22,
-          "x": 761.04,
-          "y": 4.86,
-          "z": 2000.00
-        },
-        {
-          "config": "{\"name\":\"a35939d9f52543beb66c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":633.1182795698925,\"z\":7000,\"width\":199.16508538899433,\"height\":87.43833017077799,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"MP_OceanWater.Konzentration Klasse\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MP_OceanWater\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Konzentration Klasse\"},\"Name\":\"MP_OceanWater.Konzentration Klasse\",\"NativeReferenceName\":\"Konzentration Klasse\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#e6e6e6'\"}}}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
-          "filters": "[{\"name\":\"8e59ed85fcee7c990c67\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"MP_OceanWater\"}},\"Property\":\"Konzentration Klasse\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MP_OceanWater\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Konzentration Klasse\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"null\"}}]]}}}}}]},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false}]",
-          "height": 87.44,
-          "width": 199.17,
+          "height": 79.34,
+          "width": 825.81,
           "x": 0.00,
-          "y": 633.12,
+          "y": 0.00,
           "z": 7000.00
         },
         {
-          "config": "{\"name\":\"a393e26e9f4485c91f92\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1008.7792536369387,\"y\":0,\"z\":3000,\"width\":272.0303605313093,\"height\":160.303605313093,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"MP_OceanWater.Max_MP\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MP_OceanWater\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Max_MP\"},\"Name\":\"MP_OceanWater.Max_MP\",\"NativeReferenceName\":\"Max_MP\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Max_MP\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Höchste gemessene Belastung'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}}}}],\"subTitle\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Stücke pro m³'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "config": "{\"name\":\"595076fa6f8e4ad5ff8f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1096.2175838077167,\"y\":599.1144845034788,\"z\":5000,\"width\":147.34977862112586,\"height\":74.48450347881088,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"MP_OceanWater.Jahr\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MP_OceanWater\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Jahr\"},\"Name\":\"MP_OceanWater.Jahr\",\"NativeReferenceName\":\"Jahr\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#e6e6e6'\"}}}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[{\"name\":\"6265ee31cec84e7cf361\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"MP_OceanWater\"}},\"Property\":\"Jahr\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MP_OceanWater\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Jahr\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"null\"}}]]}}}}}]},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false,\"isLockedInViewMode\":true}]",
+          "height": 74.48,
+          "width": 147.35,
+          "x": 1096.22,
+          "y": 599.11,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"71328ae7cd3514fde213\",\"layouts\":[{\"id\":0,\"position\":{\"x\":897.0524984187224,\"y\":393.472485768501,\"z\":4000,\"width\":320.607210626186,\"height\":119.82289690069577,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"MP_OceanWater.Messungen\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MP_OceanWater\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Messungen\"},\"Name\":\"MP_OceanWater.Messungen\",\"NativeReferenceName\":\"Messungen\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Messungen\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"''\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
           "filters": "[]",
-          "height": 160.30,
-          "width": 272.03,
-          "x": 1008.78,
-          "y": 0.00,
+          "height": 119.82,
+          "width": 320.61,
+          "x": 897.05,
+          "y": 393.47,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"875ac9d280597af0c1d5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":897.0524984187224,\"y\":77.72296015180265,\"z\":2000,\"width\":320.607210626186,\"height\":124.68058191018343,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"MP_OceanWater.Durchschnitt_MP\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MP_OceanWater\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Durchschnitt_MP\"},\"Name\":\"MP_OceanWater.Durchschnitt_MP\",\"NativeReferenceName\":\"Durchschnittliche Mikroplastikbelastung\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Durchschnitt_MP\"}}}]},\"columnProperties\":{\"MP_OceanWater.Durchschnitt_MP\":{\"displayName\":\"Durchschnittliche Mikroplastikbelastung\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Durchschnittliche Mikroplastikbelastung'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}}}}],\"subTitle\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Stücke pro m³'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 124.68,
+          "width": 320.61,
+          "x": 897.05,
+          "y": 77.72,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"a35939d9f52543beb66c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":845.2371916508539,\"y\":557.0145477545857,\"z\":6000,\"width\":200.7843137254902,\"height\":72.865275142315,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"MP_OceanWater.Konzentration Klasse\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MP_OceanWater\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Konzentration Klasse\"},\"Name\":\"MP_OceanWater.Konzentration Klasse\",\"NativeReferenceName\":\"Konzentration Klasse\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#e6e6e6'\"}}}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[{\"name\":\"8e59ed85fcee7c990c67\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"MP_OceanWater\"}},\"Property\":\"Konzentration Klasse\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MP_OceanWater\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Konzentration Klasse\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"null\"}}]]}}}}}]},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false}]",
+          "height": 72.87,
+          "width": 200.78,
+          "x": 845.24,
+          "y": 557.01,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"a393e26e9f4485c91f92\",\"layouts\":[{\"id\":0,\"position\":{\"x\":897.0524984187224,\"y\":254.21884882985452,\"z\":3000,\"width\":320.607210626186,\"height\":106.86907020872866,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"MP_OceanWater.Max_MP\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MP_OceanWater\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Max_MP\"},\"Name\":\"MP_OceanWater.Max_MP\",\"NativeReferenceName\":\"Maximale Mikroplastikbelastung\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Max_MP\"}}}]},\"columnProperties\":{\"MP_OceanWater.Max_MP\":{\"displayName\":\"Maximale Mikroplastikbelastung\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Höchste gemessene Belastung'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}}}}],\"subTitle\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Stücke pro m³'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 106.87,
+          "width": 320.61,
+          "x": 897.05,
+          "y": 254.22,
           "z": 3000.00
         },
         {
-          "config": "{\"name\":\"a6a9c0e8e473ff6122b4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":702.7450980392157,\"y\":267.17267552182165,\"z\":1000,\"width\":578.0645161290323,\"height\":255.83807716635042,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"MP_OceanWater.Region\",\"active\":true}],\"Y\":[{\"queryRef\":\"MP_OceanWater.Durchschnitt_MP\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MP_OceanWater\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Region\"},\"Name\":\"MP_OceanWater.Region\",\"NativeReferenceName\":\"Region\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Durchschnitt_MP\"},\"Name\":\"MP_OceanWater.Durchschnitt_MP\",\"NativeReferenceName\":\"Durchschnitt_MP\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Durchschnitt_MP\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "config": "{\"name\":\"a6a9c0e8e473ff6122b4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":84.19987349778621,\"y\":406.42631246046807,\"z\":1000,\"width\":578.0645161290323,\"height\":255.83807716635042,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"MP_OceanWater.Region\",\"active\":true}],\"Y\":[{\"queryRef\":\"MP_OceanWater.Durchschnitt_MP\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MP_OceanWater\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Region\"},\"Name\":\"MP_OceanWater.Region\",\"NativeReferenceName\":\"Region\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Durchschnitt_MP\"},\"Name\":\"MP_OceanWater.Durchschnitt_MP\",\"NativeReferenceName\":\"Durchschnitt_MP\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Durchschnitt_MP\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
           "filters": "[{\"name\":\"9de1d081d0bab0090742\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"MP_OceanWater\"}},\"Property\":\"Region\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MP_OceanWater\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Region\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"null\"}}],[{\"Literal\":{\"Value\":\"'Unknown Region'\"}}]]}}}}}]},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false,\"isLockedInViewMode\":true},{\"name\":\"34ad5e7e5a585ee10d37\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"MP_OceanWater\"}},\"Property\":\"Region\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MP_OceanWater\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Region\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Durchschnitt_MP\"}}}],\"Top\":10}}},\"Type\":2},{\"Name\":\"m\",\"Entity\":\"MP_OceanWater\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Region\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":1,\"isLockedInViewMode\":true}]",
           "height": 255.84,
           "width": 578.06,
-          "x": 702.75,
-          "y": 267.17,
+          "x": 84.20,
+          "y": 406.43,
           "z": 1000.00
         },
         {
@@ -148,7 +202,71 @@
       "height": 720.00,
       "name": "cb70196cf24d994b5754",
       "ordinal": 2,
-      "visualContainers": [],
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"3d86d120c26d71a01043\",\"layouts\":[{\"id\":0,\"position\":{\"x\":738.3681214421252,\"y\":493.86464263124606,\"z\":2000,\"width\":542.4414927261228,\"height\":226.6919671094244,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Y\":[{\"queryRef\":\"MP_OceanWater.Messungen\"}],\"Category\":[{\"queryRef\":\"MP_OceanWater.Konzentration Klasse\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MP_OceanWater\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Messungen\"},\"Name\":\"MP_OceanWater.Messungen\",\"NativeReferenceName\":\"Messungen\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Konzentration Klasse\"},\"Name\":\"MP_OceanWater.Konzentration Klasse\",\"NativeReferenceName\":\"Konzentration Klasse\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Messungen\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 226.69,
+          "width": 542.44,
+          "x": 738.37,
+          "y": 493.86,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"4625efb581c612601697\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":493.86464263124606,\"z\":4002,\"width\":654.1682479443391,\"height\":226.6919671094244,\"tabOrder\":4002}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Y\":[{\"queryRef\":\"MP_OceanWater.Messungen\"}],\"Category\":[{\"queryRef\":\"MP_OceanWater.Region\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MP_OceanWater\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Messungen\"},\"Name\":\"MP_OceanWater.Messungen\",\"NativeReferenceName\":\"Messungen\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Region\"},\"Name\":\"MP_OceanWater.Region\",\"NativeReferenceName\":\"Region\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Messungen\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 226.69,
+          "width": 654.17,
+          "x": 0.00,
+          "y": 493.86,
+          "z": 4002.00
+        },
+        {
+          "config": "{\"name\":\"54824f13c2ea3de36ba3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":869.5256166982922,\"y\":19.430740037950663,\"z\":4000,\"width\":152.20746363061355,\"height\":106,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"MP_OceanWater.Anzahl_Regionen\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MP_OceanWater\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Anzahl_Regionen\"},\"Name\":\"MP_OceanWater.Anzahl_Regionen\",\"NativeReferenceName\":\"Anzahl Regionen\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Anzahl_Regionen\"}}}]},\"columnProperties\":{\"MP_OceanWater.Anzahl_Regionen\":{\"displayName\":\"Anzahl Regionen\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 106.00,
+          "width": 152.21,
+          "x": 869.53,
+          "y": 19.43,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"863729a8c04537158767\",\"layouts\":[{\"id\":0,\"position\":{\"x\":715.6989247311828,\"y\":19.430740037950663,\"z\":3000,\"width\":152.20746363061355,\"height\":106.86907020872866,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"MP_OceanWater.Messungen\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MP_OceanWater\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Messungen\"},\"Name\":\"MP_OceanWater.Messungen\",\"NativeReferenceName\":\"Messungen\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Messungen\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 106.87,
+          "width": 152.21,
+          "x": 715.70,
+          "y": 19.43,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"9d82d01345079a089026\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1023.3523086654017,\"y\":19.430740037950663,\"z\":4001,\"width\":152,\"height\":106,\"tabOrder\":4001}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"MP_OceanWater.Anzahl_Ozeane\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MP_OceanWater\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Anzahl_Ozeane\"},\"Name\":\"MP_OceanWater.Anzahl_Ozeane\",\"NativeReferenceName\":\"Anzahl Ozeane\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Anzahl_Ozeane\"}}}]},\"columnProperties\":{\"MP_OceanWater.Anzahl_Ozeane\":{\"displayName\":\"Anzahl Ozeane\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"30D\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 106.00,
+          "width": 152.00,
+          "x": 1023.35,
+          "y": 19.43,
+          "z": 4001.00
+        },
+        {
+          "config": "{\"name\":\"e4abba9676674b6c4254\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.715370018975332,\"y\":0,\"z\":0,\"width\":890.5755850727388,\"height\":72.865275142315,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Welche geografischen Muster oder Cluster lassen sich erkennen?\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"16pt\"}}]},{\"textRuns\":[{\"value\":\"Analyse räumlicher Verteilungen und Konzentrationscluster von Mikroplastik in den Weltmeeren\",\"textStyle\":{\"fontSize\":\"12pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 72.87,
+          "width": 890.58,
+          "x": 9.72,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"e94c6b5bdc0d3452a652\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":103.63061353573688,\"z\":1000,\"width\":1280,\"height\":390.2340290955092,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"map\",\"projections\":{\"Y\":[{\"queryRef\":\"MP_OceanWater.Breitengrad dez\"}],\"X\":[{\"queryRef\":\"MP_OceanWater.Längengrad dez\"}],\"Size\":[{\"queryRef\":\"MP_OceanWater.Durchschnitt_MP\"}],\"Series\":[{\"queryRef\":\"MP_OceanWater.Konzentration Klasse\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MP_OceanWater\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Breitengrad dez\"},\"Name\":\"MP_OceanWater.Breitengrad dez\",\"NativeReferenceName\":\"Breitengrad dez\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Längengrad dez\"},\"Name\":\"MP_OceanWater.Längengrad dez\",\"NativeReferenceName\":\"Längengrad dez\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Durchschnitt_MP\"},\"Name\":\"MP_OceanWater.Durchschnitt_MP\",\"NativeReferenceName\":\"Durchschnitt_MP\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Konzentration Klasse\"},\"Name\":\"MP_OceanWater.Konzentration Klasse\",\"NativeReferenceName\":\"Konzentration Klasse\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 390.23,
+          "width": 1280.00,
+          "x": 0.00,
+          "y": 103.63,
+          "z": 1000.00
+        }
+      ],
       "width": 1280.00
     }
   ]

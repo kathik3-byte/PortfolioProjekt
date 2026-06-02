@@ -4,22 +4,10 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 0,
+        "x": 970.47616141183039,
         "y": 0
       },
       "nodes": [
-        {
-          "location": {
-            "x": 1136,
-            "y": 0
-          },
-          "nodeIndex": "Marine_Microplastics_NOAA",
-          "size": {
-            "height": 300,
-            "width": 234
-          },
-          "zIndex": 0
-        },
         {
           "location": {
             "x": 0,
@@ -66,6 +54,44 @@
           },
           "nodeIndex": "MP_Sediment",
           "nodeLineageTag": "ebcb48ae-43e6-4d33-acab-14b7f195b66f",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1136,
+            "y": 0
+          },
+          "nodeIndex": "NOAA_ALT",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1420,
+            "y": 0
+          },
+          "nodeIndex": "NOAA_NEU",
+          "nodeLineageTag": "8f818887-24b3-427c-9d00-ffa2d2c9eac8",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1704,
+            "y": 0
+          },
+          "nodeIndex": "NOAA_Ocean_Water",
+          "nodeLineageTag": "76c52719-bc9a-4425-b1b9-b3c59480eedc",
           "size": {
             "height": 300,
             "width": 234

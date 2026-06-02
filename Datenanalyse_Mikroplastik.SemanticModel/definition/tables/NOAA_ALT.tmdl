@@ -1,7 +1,7 @@
-table Marine_Microplastics_NOAA
+table NOAA_ALT
 	lineageTag: 72182b45-5ea1-4e36-8e0a-351000617989
 
-	measure Mess = COUNT('Marine_Microplastics_NOAA'[Mikroplastik Menge])
+	measure Mess = COUNT('NOAA_ALT'[Mikroplastik Menge])
 		formatString: 0
 		lineageTag: f917c146-014a-4bfe-b9c3-c0bab40a757b
 
@@ -262,7 +262,7 @@ table Marine_Microplastics_NOAA
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	partition Marine_Microplastics_NOAA = m
+	partition NOAA_ALT = m
 		mode: import
 		source =
 				let

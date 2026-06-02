@@ -183,11 +183,18 @@ table MP_OceanWater
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	hierarchy 'Breitengrad dez Hierarchie'
+		lineageTag: 3cdb8942-f395-4433-a4a9-5acd2790312f
+
+		level 'Breitengrad dez'
+			lineageTag: ac5c2313-9b6e-4c83-86cf-ae93113193bd
+			column: 'Breitengrad dez'
+
 	partition MP_OceanWater = m
 		mode: import
 		source =
 				let
-				    Quelle = Marine_Microplastics_NOAA,
+				    Quelle = NOAA_ALT,
 				    #"OceanWater gefiltert" = Table.SelectRows(Quelle, each ([Meeresumgebung] = "Ocean water")),
 				    #"Entfernte Spalten" = Table.RemoveColumns(#"OceanWater gefiltert",{"Water Sample Depth (m)", "Sampling Method", "Mesh Size (mm)", "Short Reference", "Long Reference", "DOI", "Organization", "Keywords", "NCEI Accession Number", "NCEI Accession Link", "Symbology", "GlobalID", "x", "y"})
 				in

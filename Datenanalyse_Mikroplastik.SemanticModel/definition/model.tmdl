@@ -10,11 +10,11 @@ annotation PBI_ProTooling = ["DevMode"]
 
 annotation PBIDesktopVersion = 2.146.1026.0 (25.08)+fb98ab832373de81dccd5c01cd96306a48477556
 
-annotation PBI_QueryOrder = ["Marine_Microplastics_NOAA","MP_OceanWater","MP_Sediment","MP_Nurdle","MP_Beach"]
+annotation PBI_QueryOrder = ["NOAA_ALT","MP_OceanWater","MP_Sediment","MP_Nurdle","MP_Beach","NOAA_NEU","NOAA_Ocean_Water"]
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-ref table Marine_Microplastics_NOAA
+ref table NOAA_ALT
 ref table DateTableTemplate_513d9335-d98e-41a0-beef-92766691130f
 ref table LocalDateTable_703415c6-ef9d-444d-b5ac-109b411d615c
 ref table MP_OceanWater
@@ -25,6 +25,10 @@ ref table MP_Nurdle
 ref table LocalDateTable_96f6eb72-a559-481a-b4d9-e4b251c25f71
 ref table MP_Beach
 ref table LocalDateTable_1490e444-0e0e-4816-a351-ac9f7e1e119a
+ref table NOAA_NEU
+ref table LocalDateTable_ca2aa2e5-a5ad-4800-a65b-35589d3925ef
+ref table NOAA_Ocean_Water
+ref table LocalDateTable_b7c7a519-8e11-4d06-9581-87175eecffd6
 
 ref cultureInfo de-DE
 

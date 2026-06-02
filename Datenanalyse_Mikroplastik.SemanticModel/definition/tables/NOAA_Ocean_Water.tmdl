@@ -1,0 +1,161 @@
+table NOAA_Ocean_Water
+	lineageTag: 76c52719-bc9a-4425-b1b9-b3c59480eedc
+
+	measure Messungen1 = COUNT('NOAA_Ocean_Water'[Mikroplastik Menge])
+		formatString: 0
+		lineageTag: 9307e5f0-2426-4f87-9946-dfa7f7807d40
+
+	measure Anzahl_Messungen =
+			
+			COUNTROWS(NOAA_Ocean_Water)
+		formatString: 0
+		lineageTag: 979f5481-e8c8-4bf6-aa85-d5e062fb751d
+
+	measure Durchschnitt_MP1 =
+			
+			AVERAGE(NOAA_Ocean_Water[Mikroplastik Menge])
+		lineageTag: d02b8626-b3d4-43a2-89f3-d705be82e2bd
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Max_MP1 =
+			
+			MAX(NOAA_Ocean_Water[Mikroplastik Menge])
+		lineageTag: 8aec631a-b378-4312-9ae4-af3ac03040ad
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Zeitraum_Jahre =
+			
+			MAX(NOAA_Ocean_Water[Jahr]) - MIN(NOAA_Ocean_Water[Jahr])
+		formatString: 0
+		lineageTag: 8a02ffa5-9e03-4685-814f-c7fd9c460e1d
+
+	column Breitengrad
+		dataType: double
+		lineageTag: 53f2f7cb-f42d-459b-a0fe-76fc097ed624
+		dataCategory: Latitude
+		summarizeBy: none
+		sourceColumn: Breitengrad
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Längengrad
+		dataType: double
+		lineageTag: daf61a4f-cfe5-4e9f-92c7-022f90cee5e5
+		dataCategory: Longitude
+		summarizeBy: none
+		sourceColumn: Längengrad
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Ozean
+		dataType: string
+		lineageTag: 3ef70f34-6ecf-4780-a438-ecdd4f1ef565
+		summarizeBy: none
+		sourceColumn: Ozean
+
+		annotation SummarizationSetBy = Automatic
+
+	column Region
+		dataType: string
+		lineageTag: dfc8d150-977f-45e3-8fb0-7387eb30206b
+		summarizeBy: none
+		sourceColumn: Region
+
+		annotation SummarizationSetBy = Automatic
+
+	column Meeresumgebung
+		dataType: string
+		lineageTag: 5aa4a215-41c0-48a0-a4bf-31bb5c75641f
+		summarizeBy: none
+		sourceColumn: Meeresumgebung
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mikroplastik Menge'
+		dataType: double
+		lineageTag: 6fa381fa-6a93-4627-8ef2-75efb8019019
+		summarizeBy: sum
+		sourceColumn: Mikroplastik Menge
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Einheit
+		dataType: string
+		lineageTag: c1a82855-cd8a-4cfb-b4ee-9876cbaaae50
+		summarizeBy: none
+		sourceColumn: Einheit
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Konzentration Range'
+		dataType: string
+		lineageTag: d80a98ec-5296-4187-ba0a-44859b6ca45f
+		summarizeBy: none
+		sourceColumn: Konzentration Range
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Konzentration Klasse'
+		dataType: string
+		lineageTag: 1154291c-a7f8-4394-b717-ec1698b61e8d
+		summarizeBy: none
+		sourceColumn: Konzentration Klasse
+
+		annotation SummarizationSetBy = Automatic
+
+	column Datum
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 97b66135-5a87-4a0d-b40d-7b2917caf8de
+		summarizeBy: none
+		sourceColumn: Datum
+
+		variation Variation
+			isDefault
+			relationship: 9dc97e1d-26c6-47dc-8313-d533f547047a
+			defaultHierarchy: LocalDateTable_b7c7a519-8e11-4d06-9581-87175eecffd6.Datumshierarchie
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Jahr
+		dataType: int64
+		formatString: 0
+		lineageTag: c6d7a855-debd-4877-8408-388cb1c9f963
+		summarizeBy: sum
+		sourceColumn: Jahr
+
+		annotation SummarizationSetBy = Automatic
+
+	column Monat
+		dataType: int64
+		formatString: 0
+		lineageTag: 8b4d0e9b-3bbc-4e02-995b-5cfbf90123e9
+		summarizeBy: sum
+		sourceColumn: Monat
+
+		annotation SummarizationSetBy = Automatic
+
+	partition NOAA_Ocean_Water = m
+		mode: import
+		source =
+				let
+				    Quelle = NOAA_NEU,
+				    #"Gefilterte Zeilen" = Table.SelectRows(Quelle, each ([Meeresumgebung] = "Ocean water")),
+				    #"Entfernte Spalten" = Table.RemoveColumns(#"Gefilterte Zeilen",{"Objekt", "Sampling Method", "Mesh Size (mm)", "Short Reference", "Water Sample Depth (m)", "Long Reference", "DOI", "Organization", "Keywords", "NCEI Accession Number", "NCEI Accession Link", "Symbology", "GlobalID", "x", "y"})
+				in
+				    #"Entfernte Spalten"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

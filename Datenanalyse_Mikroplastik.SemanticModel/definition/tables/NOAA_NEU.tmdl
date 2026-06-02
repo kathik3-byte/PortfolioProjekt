@@ -1,0 +1,314 @@
+table NOAA_NEU
+	lineageTag: 8f818887-24b3-427c-9d00-ffa2d2c9eac8
+
+	column Objekt
+		dataType: string
+		lineageTag: b07d5224-1016-4dc6-b814-5d3238df4683
+		summarizeBy: none
+		sourceColumn: Objekt
+
+		annotation SummarizationSetBy = Automatic
+
+	column Breitengrad
+		dataType: double
+		lineageTag: 4106ec43-b18d-4323-9dfb-0eb34e80cbe1
+		summarizeBy: sum
+		sourceColumn: Breitengrad
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Längengrad
+		dataType: double
+		lineageTag: ed4f0f13-7d18-4739-87b0-f70864ce73c1
+		summarizeBy: sum
+		sourceColumn: Längengrad
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Ozean
+		dataType: string
+		lineageTag: 12e20792-6dab-4e6d-9b25-e324e201fe74
+		summarizeBy: none
+		sourceColumn: Ozean
+
+		annotation SummarizationSetBy = Automatic
+
+	column Region
+		dataType: string
+		lineageTag: 405b9ff8-56a2-41a8-a2b2-ba3917ee2ebf
+		summarizeBy: none
+		sourceColumn: Region
+
+		annotation SummarizationSetBy = Automatic
+
+	column Meeresumgebung
+		dataType: string
+		lineageTag: 545c846f-ebe5-4c66-b5fc-8af7b121f714
+		summarizeBy: none
+		sourceColumn: Meeresumgebung
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Water Sample Depth (m)'
+		dataType: string
+		lineageTag: 5ebf0677-9bac-4a36-979b-b8ce0def636b
+		summarizeBy: none
+		sourceColumn: Water Sample Depth (m)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sampling Method'
+		dataType: string
+		lineageTag: 8d58d7ff-c9ed-4084-8f32-8437a3369c28
+		summarizeBy: none
+		sourceColumn: Sampling Method
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mesh Size (mm)'
+		dataType: string
+		lineageTag: d8eb661c-1545-4975-b386-8bf0772de3ae
+		summarizeBy: none
+		sourceColumn: Mesh Size (mm)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mikroplastik Menge'
+		dataType: double
+		lineageTag: 52fe0a63-f0f5-41c7-806e-aa2cec151d16
+		summarizeBy: sum
+		sourceColumn: Mikroplastik Menge
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Einheit
+		dataType: string
+		lineageTag: 64a1a8d2-9311-4658-a26e-d5680abe97a6
+		summarizeBy: none
+		sourceColumn: Einheit
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Konzentration Range'
+		dataType: string
+		lineageTag: a6238e02-83ca-4a2f-becb-c82357f0e8a4
+		summarizeBy: none
+		sourceColumn: Konzentration Range
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Konzentration Klasse'
+		dataType: string
+		lineageTag: 2a83dbf1-2af3-4256-884e-3c6f9ef544ff
+		summarizeBy: none
+		sourceColumn: Konzentration Klasse
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Short Reference'
+		dataType: string
+		lineageTag: 69dee40c-d813-4a0b-a731-88cdb5b84443
+		summarizeBy: none
+		sourceColumn: Short Reference
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Long Reference'
+		dataType: string
+		lineageTag: 2c6e3da8-e28c-4982-8cd0-1cd8adc280ac
+		summarizeBy: none
+		sourceColumn: Long Reference
+
+		annotation SummarizationSetBy = Automatic
+
+	column DOI
+		dataType: string
+		lineageTag: 0cd7f355-f853-4cbf-b8b1-50e02b29a721
+		summarizeBy: none
+		sourceColumn: DOI
+
+		annotation SummarizationSetBy = Automatic
+
+	column Organization
+		dataType: string
+		lineageTag: c819a973-c206-42c5-9ebd-deaa43a9d8f2
+		summarizeBy: none
+		sourceColumn: Organization
+
+		annotation SummarizationSetBy = Automatic
+
+	column Keywords
+		dataType: string
+		lineageTag: 02816b25-9f8a-4420-8549-ef414c6cb976
+		summarizeBy: none
+		sourceColumn: Keywords
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NCEI Accession Number'
+		dataType: string
+		lineageTag: 18522be5-1992-4df1-a2ea-46bb2f152ba8
+		summarizeBy: none
+		sourceColumn: NCEI Accession Number
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NCEI Accession Link'
+		dataType: string
+		lineageTag: 541fe6c2-d534-4af9-964e-8128a1d8f9ba
+		summarizeBy: none
+		sourceColumn: NCEI Accession Link
+
+		annotation SummarizationSetBy = Automatic
+
+	column Symbology
+		dataType: string
+		lineageTag: 89129282-9ac1-42d0-9e4b-9f2538f3b522
+		summarizeBy: none
+		sourceColumn: Symbology
+
+		annotation SummarizationSetBy = Automatic
+
+	column GlobalID
+		dataType: string
+		lineageTag: f5f66d32-84c0-436e-9233-b165a3070638
+		summarizeBy: none
+		sourceColumn: GlobalID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Datum
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: fea419aa-402f-45e1-9717-fdcdca4d7368
+		summarizeBy: none
+		sourceColumn: Datum
+
+		variation Variation
+			isDefault
+			relationship: eb14203f-69e5-4b47-bb4a-8f4a535fff79
+			defaultHierarchy: LocalDateTable_ca2aa2e5-a5ad-4800-a65b-35589d3925ef.Datumshierarchie
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column x
+		dataType: string
+		lineageTag: ceebf46f-9101-49a3-9d63-2e2ccb8d78f5
+		summarizeBy: none
+		sourceColumn: x
+
+		annotation SummarizationSetBy = Automatic
+
+	column y
+		dataType: string
+		lineageTag: a0968815-8c11-4a83-947b-056ddf64bdba
+		summarizeBy: none
+		sourceColumn: y
+
+		annotation SummarizationSetBy = Automatic
+
+	column Jahr
+		dataType: int64
+		formatString: 0
+		lineageTag: 53824b55-d5f9-447e-8086-759533c13014
+		summarizeBy: sum
+		sourceColumn: Jahr
+
+		annotation SummarizationSetBy = Automatic
+
+	column Monat
+		dataType: int64
+		formatString: 0
+		lineageTag: f98fd3fa-309d-429e-9a04-2b0d01f23451
+		summarizeBy: sum
+		sourceColumn: Monat
+
+		annotation SummarizationSetBy = Automatic
+
+	partition NOAA_NEU = m
+		mode: import
+		source =
+				let
+				    Quelle = Csv.Document(File.Contents("C:\Users\Trainee\Downloads\Marine_Microplastics_WGS84_-4941760893681039301.csv"),[Delimiter=",", Columns=36, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Höher gestufte Header" = Table.PromoteHeaders(Quelle, [PromoteAllScalars=true]),
+				    #"Geänderter Typ mit Gebietsschema" = Table.TransformColumnTypes(#"Höher gestufte Header", {{"Latitude (degree)", type number}}, "en-US"),
+				    #"Geänderter Typ mit Gebietsschema1" = Table.TransformColumnTypes(#"Geänderter Typ mit Gebietsschema", {{"Longitude (degree)", type number}}, "en-US"),
+				    #"Leere Spalten entfernt (11St.)" = Table.RemoveColumns(#"Geänderter Typ mit Gebietsschema1",{"Subregion", "Country", "State", "Beach Location", "Ocean Bottom Depth (m)", "Sediment Sample Depth (m)", "Transect Number", "Sampling Point on Beach", "Volunteers Number", "Collecting Time (min)", "Standardized Nurdle  Amount"}),
+				
+				#"Relevante Spalten umbenannt(deutsch)" = Table.RenameColumns(#"Leere Spalten entfernt (11St.)",{
+				    {"OBJECTID", "Objekt"},
+				    {"Latitude (degree)", "Breitengrad"},
+				    {"Longitude (degree)", "Längengrad"},
+				    {"Ocean", "Ozean"},
+				    {"Microplastics Measurement", "Mikroplastik Menge"},
+				    {"Unit", "Einheit"},
+				    {"Concentration Class Range", "Konzentration Range"},
+				    {"Concentration Class", "Konzentration Klasse"},
+				    {"Sample Date", "Datum"}
+				}),
+				
+				#"Spalten formatiert" = Table.TransformColumnTypes(#"Relevante Spalten umbenannt(deutsch)",{
+				    {"Objekt", type text},
+				    {"Breitengrad", type number},
+				    {"Längengrad", type number},
+				    {"Ozean", type text},
+				    {"Region", type text},
+				    {"Mikroplastik Menge", type number},
+				    {"Einheit", type text},
+				    {"Konzentration Range", type text},
+				    {"Konzentration Klasse", type text},
+				    {"Datum", type text}
+				}),
+				
+				#"Datum formatiert mit Uhrzeit" = Table.TransformColumnTypes(#"Spalten formatiert", {{"Datum", type datetime}}, "en-US"),
+				
+				#"Extrahiertes Datum" = Table.TransformColumns(#"Datum formatiert mit Uhrzeit", {
+				    {"Datum", DateTime.Date, type date}
+				}),
+				
+				#"Jahr eingefügt" = Table.AddColumn(#"Extrahiertes Datum", "Jahr", each Date.Year([Datum]), Int64.Type),
+				
+				#"Monat eingefügt" = Table.AddColumn(#"Jahr eingefügt", "Monat", each Date.Month([Datum]), Int64.Type),
+				
+				#"Barents Sea ersetzt" = Table.ReplaceValue(#"Monat eingefügt","Barentsz Sea","Barents Sea",Replacer.ReplaceText,{"Region"}),
+				
+				#"East China Sea ersetzt" = Table.ReplaceValue(#"Barents Sea ersetzt","Eastern China Sea","East China Sea",Replacer.ReplaceText,{"Region"}),
+				
+				#"Rio de la Plata ersetzt" = Table.ReplaceValue(#"East China Sea ersetzt","Rio de La Plata","Rio de la Plata",Replacer.ReplaceText,{"Region"}),
+				
+				#"Relevante Spalte Meeresumgebung" = Table.RenameColumns(#"Rio de la Plata ersetzt",{
+				    {"Marine Setting", "Meeresumgebung"}
+				}),
+				
+				#"Bereinigter Text" = Table.TransformColumns(#"Relevante Spalte Meeresumgebung",{
+				    {"Region", Text.Clean, type text}
+				}),
+				
+				#"Abgeschnittener Text" = Table.TransformColumns(#"Bereinigter Text",{
+				    {"Region", Text.Trim, type text}
+				}),
+				
+				#"Unknown Region" = Table.ReplaceValue(#"Abgeschnittener Text","","Unknown Region",Replacer.ReplaceValue,{"Region"}),
+				
+				#"Unknown Ocean" = Table.ReplaceValue(#"Unknown Region","","Unknown Ocean",Replacer.ReplaceValue,{"Ozean"}),
+				
+				#"Ersetzter Wert" = Table.ReplaceValue(#"Unknown Ocean",null,"Unknown Ocean",Replacer.ReplaceValue,{"Ozean"}),
+				
+				#"Gefilterte Zeilen3" = Table.SelectRows(#"Ersetzter Wert", each [Breitengrad] >= -90 and [Breitengrad] <= 90),
+				
+				#"Gefilterte Zeilen4" = Table.SelectRows(#"Gefilterte Zeilen3", each [Längengrad] >= -180 and [Längengrad] <= 180)
+				in
+				    #"Gefilterte Zeilen4"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

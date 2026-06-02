@@ -1,19 +1,26 @@
 table MP_Beach
+	isHidden
 	lineageTag: 9ae5a6cf-350f-4c17-9fc3-a90e851719f0
 
 	column Objekt
 		dataType: string
+		isHidden
 		lineageTag: 47c73487-3cc2-494b-9cce-65050be38be8
 		summarizeBy: none
 		sourceColumn: Objekt
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
 	column Breitengrad
 		dataType: double
+		isHidden
 		lineageTag: 10d6167c-f521-4c7c-a423-a08b3a9d23ae
 		summarizeBy: sum
 		sourceColumn: Breitengrad
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -21,9 +28,12 @@ table MP_Beach
 
 	column Längengrad
 		dataType: double
+		isHidden
 		lineageTag: 5f5cad79-a335-44ce-a044-6430832963ec
 		summarizeBy: sum
 		sourceColumn: Längengrad
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -31,33 +41,45 @@ table MP_Beach
 
 	column Ozean
 		dataType: string
+		isHidden
 		lineageTag: ce704729-d315-4458-aebe-939b2c8f66d7
 		summarizeBy: none
 		sourceColumn: Ozean
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
 	column Region
 		dataType: string
+		isHidden
 		lineageTag: 4ff219c1-f8ae-4467-848e-2a9c63cedc3e
 		summarizeBy: none
 		sourceColumn: Region
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
 	column Meeresumgebung
 		dataType: string
+		isHidden
 		lineageTag: b2fc7d17-d58a-4dea-83c5-9895b73526ba
 		summarizeBy: none
 		sourceColumn: Meeresumgebung
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
 	column 'Mikroplastik Menge'
 		dataType: double
+		isHidden
 		lineageTag: 1bd05d13-a7be-46bc-86af-4c3714716052
 		summarizeBy: sum
 		sourceColumn: Mikroplastik Menge
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -65,30 +87,40 @@ table MP_Beach
 
 	column Einheit
 		dataType: string
+		isHidden
 		lineageTag: 7873fd39-cc6e-4026-ac7a-9b58eb076a71
 		summarizeBy: none
 		sourceColumn: Einheit
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
 	column 'Konzentration Range'
 		dataType: string
+		isHidden
 		lineageTag: aa63469c-011e-4df1-ac8d-2dacd1c3cc9e
 		summarizeBy: none
 		sourceColumn: Konzentration Range
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
 	column 'Konzentration Klasse'
 		dataType: string
+		isHidden
 		lineageTag: 2fd11d8a-21f5-4b2e-986e-173b185880fb
 		summarizeBy: none
 		sourceColumn: Konzentration Klasse
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
 	column Datum
 		dataType: dateTime
+		isHidden
 		formatString: Long Date
 		lineageTag: 9fcb8fc6-b1ab-42da-8a27-cfe093922119
 		summarizeBy: none
@@ -99,33 +131,44 @@ table MP_Beach
 			relationship: b94017db-362e-4048-859f-c58e57e46f23
 			defaultHierarchy: LocalDateTable_1490e444-0e0e-4816-a351-ac9f7e1e119a.Datumshierarchie
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 		annotation UnderlyingDateTimeDataType = Date
 
 	column Jahr
 		dataType: int64
+		isHidden
 		formatString: 0
 		lineageTag: f39e4397-1b86-41c9-af4b-d55d1ce2a521
 		summarizeBy: sum
 		sourceColumn: Jahr
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column Monat
 		dataType: int64
+		isHidden
 		formatString: 0
 		lineageTag: 8a546b8f-83b6-4325-9f47-46769ae7c0bb
 		summarizeBy: sum
 		sourceColumn: Monat
 
+		changedProperty = IsHidden
+
 		annotation SummarizationSetBy = Automatic
 
 	column 'Breitengrad dez'
 		dataType: double
+		isHidden
 		lineageTag: 61c16919-8f41-4869-a0a7-9e93622fd86d
 		summarizeBy: sum
 		sourceColumn: Breitengrad dez
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -133,9 +176,12 @@ table MP_Beach
 
 	column 'Längengrad dez'
 		dataType: double
+		isHidden
 		lineageTag: 0525a949-de09-4b04-bd83-b95321c45c04
 		summarizeBy: sum
 		sourceColumn: Längengrad dez
+
+		changedProperty = IsHidden
 
 		annotation SummarizationSetBy = Automatic
 
@@ -145,11 +191,13 @@ table MP_Beach
 		mode: import
 		source =
 				let
-				    Quelle = Marine_Microplastics_NOAA,
+				    Quelle = NOAA_ALT,
 				    Beach = Table.SelectRows(Quelle, each ([Meeresumgebung] = "Beach")),
 				    #"Entfernte Spalten" = Table.RemoveColumns(Beach,{"Water Sample Depth (m)", "Sampling Method", "Mesh Size (mm)", "Short Reference", "Long Reference", "DOI", "Organization", "Keywords", "NCEI Accession Number", "NCEI Accession Link", "Symbology", "GlobalID", "x", "y"})
 				in
 				    #"Entfernte Spalten"
+
+	changedProperty = IsHidden
 
 	annotation PBI_NavigationStepName = Navigation
 

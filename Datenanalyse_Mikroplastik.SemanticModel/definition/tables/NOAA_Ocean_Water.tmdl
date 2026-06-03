@@ -25,11 +25,32 @@ table NOAA_Ocean_Water
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	measure Zeitraum_Jahre =
+	measure Zeitraum1 = ```
 			
-			MAX(NOAA_Ocean_Water[Jahr]) - MIN(NOAA_Ocean_Water[Jahr])
-		formatString: 0
+			MIN('NOAA_Ocean_Water'[Jahr]) 
+			& " - " & 
+			MAX('NOAA_Ocean_Water'[Jahr])
+			```
 		lineageTag: 8a02ffa5-9e03-4685-814f-c7fd9c460e1d
+
+	measure Anzahl_Regionen =
+			
+			DISTINCTCOUNT(NOAA_Ocean_Water[Region])
+		formatString: 0
+		lineageTag: 3d3b62b2-bfaf-434c-a267-945286fb7262
+
+	measure Anzahl_Ozeane =
+			
+			DISTINCTCOUNT(NOAA_ALT[Ozean])
+		formatString: 0
+		lineageTag: ed1e177a-1832-4b37-9026-69a8c9844cbd
+
+	measure Median_MP =
+			
+			MEDIAN('NOAA_Ocean_Water'[Mikroplastik Menge])
+		lineageTag: 83285264-87ac-425b-bf93-92848c327888
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	column Breitengrad
 		dataType: double

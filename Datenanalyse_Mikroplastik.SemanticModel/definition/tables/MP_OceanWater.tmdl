@@ -23,18 +23,6 @@ table MP_OceanWater
 			```
 		lineageTag: 25d3ee82-effc-44b0-aff8-5cb438528bd5
 
-	measure Anzahl_Regionen =
-			
-			DISTINCTCOUNT(MP_OceanWater[Region])
-		formatString: 0
-		lineageTag: 3d3b62b2-bfaf-434c-a267-945286fb7262
-
-	measure Anzahl_Ozeane =
-			
-			DISTINCTCOUNT(MP_OceanWater[Ozean])
-		formatString: 0
-		lineageTag: ed1e177a-1832-4b37-9026-69a8c9844cbd
-
 	column Objekt
 		dataType: string
 		lineageTag: 74c8251d-32e4-4789-9c35-ab8938dc7e28

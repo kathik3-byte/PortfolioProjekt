@@ -1,21 +1,17 @@
 # Analyse globaler Mikroplastik-Hotspots in den Weltmeeren 
 
-> Visualisierung und Untersuchung räumlicher sowie zeitlicher Muster mithilfe von Power BI
+> Analyse globaler NOAA-Messdaten zur Untersuchung der räumlichen Verteilung, zeitlichen Entwicklung und geografischen Konzentrationsmuster von Mikroplastik in den Weltmeeren.
 
 ## 📊 Projektübersicht
 
-Dieses Projekt untersucht die globale Verbreitung von Mikroplastik in den Weltmeeren anhand von Datensätzen der NOAA Marine Microplastics Database. Ziel ist es, geografische Hotspots der Mikroplastikbelastung zu identifizieren, zeitliche Entwicklungen sichtbar zu machen und räumliche Muster der Verschmutzung zu analysieren.
+Mikroplastik stellt eine der größten Herausforderungen für marine Ökosysteme dar. Die winzigen Kunststoffpartikel gelangen über Flüsse, Küstenregionen und menschliche Aktivitäten in die Ozeane und können dort über lange Zeiträume verbleiben. Trotz zahlreicher Messprogramme ist die globale Verteilung von Mikroplastik komplex und regional sehr unterschiedlich.
 
-Die Analyse wird mithilfe von Microsoft Power BI durchgeführt und kombiniert Datenaufbereitung, explorative Datenanalyse sowie interaktive Visualisierungen in Form eines Dashboards.
+Ziel dieses Projekts ist die Analyse eines internationalen NOAA-Datensatzes, um Belastungsschwerpunkte, zeitliche Entwicklungen und geografische Muster der Mikroplastikverschmutzung sichtbar zu machen.
 
 **Ziel:** 
-Mikroplastik stellt eine zunehmende Umweltbelastung für marine Ökosysteme dar. Dieses Projekt soll mithilfe datenbasierter Analysen aufzeigen:
 
-welche Regionen der Weltmeere besonders stark betroffen sind,
-wie sich die Mikroplastikbelastung über die Zeit verändert hat,
-und welche geografischen Muster oder Konzentrationen erkennbar sind. 
-
-**Forschungsfragen:** 
+Im Rahmen dieses Projekts sollen folgende Forschungsfragen beantwortet werden:
+ 
 1. Welche Regionen weisen die höchste Mikroplastikbelastung auf?
 
 Analyse geografischer Hotspots und Vergleich verschiedener Ozeanregionen anhand von Konzentrationswerten.
@@ -28,3 +24,43 @@ Untersuchung zeitlicher Trends und Entwicklungen der Mikroplastikverschmutzung �
 
 Analyse räumlicher Verteilungen und möglicher Konzentrationscluster in den Weltmeeren.
 
+**Methoden:** 
+
+- Datenbereinigung und Datenvalidierung in Power Query
+- Berechnung von Kennzahlen wie Median, Durchschnitt und Maximum
+- Geografische Visualisierung von Messpunkten mittels Kartenvisualisierungen
+- Zeitreihenanalyse zur Untersuchung langfristiger Entwicklungen
+- Clusteranalyse anhand räumlicher Konzentrationsmuster
+- Interaktive Dashboards mit Filtern nach Ozean, Jahr und Konzentrationsklasse
+
+**Herausforderungen im Datensatz:** 
+
+Während der Datenaufbereitung wurden mehrere Qualitätsprobleme identifiziert:
+
+- Fehlende oder unvollständige Regionszuordnungen ("Unknown Region")
+- Inkonsistente geografische Koordinaten
+- Unterschiedliche Einheiten und Messmethoden innerhalb des Datensatzes
+- Sehr starke Ausreißer bei einzelnen Messungen mit Konzentrationen von mehreren Milliarden Partikeln pro m³
+- Teilweise fehlerhafte oder nicht eindeutig zuordenbare Regionsbezeichnungen
+
+Um die Aussagekraft der Analyse zu erhöhen, wurden ungültige Koordinaten bereinigt und für viele Analysen robuste Kennzahlen wie der Median anstelle des Durchschnitts verwendet.
+
+**Verwendete Daten:**
+
+Quelle: NOAA Marine Microplastics Database
+
+Zeitraum: 1972 – 2022
+
+Anzahl analysierter Messungen: 15.530
+
+Anzahl untersuchter Regionen: 72
+
+Anzahl untersuchter Ozeane: 4
+
+**Zentrale Erkenntnisse:**
+
+- Die Mikroplastikbelastung ist weltweit sehr ungleich verteilt.
+- Besonders hohe Belastungen treten in einzelnen regionalen Hotspots auf.
+- Die zeitliche Analyse zeigt einen langfristig steigenden Trend der Mikroplastikbelastung.
+- Räumliche Cluster konzentrieren sich vor allem im Nordatlantik, Mittelmeerraum und westlichen Pazifik.
+- Sehr hohe Konzentrationen sind selten, treten jedoch lokal stark konzentriert auf.

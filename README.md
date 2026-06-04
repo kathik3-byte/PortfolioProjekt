@@ -9,6 +9,7 @@ Mikroplastik stellt eine der größten Herausforderungen für marine Ökosysteme
 Ziel dieses Projekts ist die Analyse eines internationalen NOAA-Datensatzes, um Belastungsschwerpunkte, zeitliche Entwicklungen und geografische Muster der Mikroplastikverschmutzung sichtbar zu machen.
 
 **Ziel:** 
+
 Im Rahmen dieses Projekts sollen folgende Forschungsfragen beantwortet werden:
  
 1. Welche Regionen weisen die höchste Mikroplastikbelastung auf?

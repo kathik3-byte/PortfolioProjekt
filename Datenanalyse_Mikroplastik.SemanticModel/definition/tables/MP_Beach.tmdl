@@ -187,6 +187,22 @@ table MP_Beach
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	column Sort_Konzentration =
+			
+			SWITCH(
+			    NOAA_Ocean_Water,
+			    "Very Low", 1,
+			    "Low", 2,
+			    "Medium", 3,
+			    "High", 4,
+			    "Very High", 5,
+			    99
+			)
+		lineageTag: e92bcf18-09c7-4622-b681-147ecefbabeb
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
 	partition MP_Beach = m
 		mode: import
 		source =
